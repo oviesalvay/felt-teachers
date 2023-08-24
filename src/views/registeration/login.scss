@@ -1,0 +1,77 @@
+@import '../../scss/mixins';
+
+
+.login {
+    @include padding;
+    background-color: #23120B;
+
+    h2 {
+        color: #5E5DBA;
+        text-align: center;
+    }
+
+    .log {
+        background-color: #E6E6E8;
+        padding: 2rem 3rem;
+        margin: 2rem 18rem;
+        border-radius: 20px;
+    }
+
+    #new {
+        text-align: center;
+
+        button {
+            background: #FFFFFF;
+            border: 1px solid #C4C4C4;
+            color: #C7C7C7;
+            padding: 1rem 2.3rem;
+            font-size: 20px;
+        }
+
+        .current:hover {
+            color: #5E5DBA;
+        }
+    }
+
+    form {
+        max-width: 500px;
+        margin: 3rem 0 0 0;
+
+        input {
+            padding: 1rem;
+            width: 100%;
+            border-radius: 25px;
+            font-size: 15px;
+        }
+    }
+
+    .forget {
+        display: flex;
+        justify-content: space-between;
+
+        h4 {
+            color: #FDB827;
+            font-size: 22px;
+        }
+
+        .login {
+            border: 1px solid #5E5DBA;
+            background-color: #FFFFFF;
+            color: #5E5DBA;
+            padding: 1rem 3rem;
+            border-radius: 15px;
+        }
+    }
+
+    h5 {
+        text-align: center;
+        color: #5E5DBA;
+        font-size: 22px;
+    }
+
+    a {
+        color: #FDB827;
+        font-size: 22px;
+    }
+
+}

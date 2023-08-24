@@ -1,0 +1,28 @@
+@import '../scss/mixins';
+
+
+header{
+@include padding;
+background-color: #FFFFFF;
+padding-bottom: 0;
+
+nav{
+        @include flexbox;
+
+        .logo{
+            @include flexbox;
+        }
+        .navlinks{
+            @include flex-align-center;
+
+            a{
+                margin: 0 1rem;
+                text-decoration: none;
+                color: #5E5DBA;
+                font-weight: 500px;
+                font-size: 24px;
+                font-family: 'Montserrat';
+            }
+        }
+    }
+}

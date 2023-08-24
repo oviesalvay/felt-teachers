@@ -1,0 +1,18 @@
+input.input-error {
+    border: 1px solid #fc8181 !important;
+}
+
+.input-error {
+    border: 1px solid #fc8181 !important;
+}
+
+.error {
+    color: #fc8181 !important;
+    font-size: .75rem !important;
+    text-align: left !important;
+    margin-top: .25rem !important;
+}
+
+button:disabled {
+    opacity: .7 !important;
+}

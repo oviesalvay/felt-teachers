@@ -1,0 +1,17 @@
+@mixin padding {
+    padding: 1rem clamp(1rem, 4vw, 6rem);
+}
+@mixin flexbox{
+    display: flex;
+    justify-content: space-between;
+    gap:2rem;
+    align-items: center;
+}
+@mixin flex-align-center{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+}
+@mixin padding-top{
+    padding: 3rem 2rem 2rem 2rem;
+}

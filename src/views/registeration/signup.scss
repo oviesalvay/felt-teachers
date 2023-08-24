@@ -1,0 +1,86 @@
+@import '../../scss/mixins';
+@import '../registeration/error.scss';
+
+.sign {
+    background-color: #23120B;
+    @include padding;
+    position: relative;
+
+    #yellow {
+        position: absolute;
+        bottom: 15rem;
+        left: 9rem;
+    }
+
+    #circle {
+        position: absolute;
+        bottom: 26rem;
+        right: 12rem;
+        // left: 15rem;
+        width: 6%;
+    }
+
+    #yellowed {
+        position: absolute;
+        bottom: 22rem;
+        right: 3rem;
+    }
+
+    .signup {
+        background-color: #E6E6E8;
+        text-align: center;
+        border-radius: 25px;
+        box-shadow: #21209C1A;
+        padding: 2rem 3rem;
+        margin: 2rem 18rem;
+
+        h1 {
+            color: #5E5DBA;
+            font-size: 2rem;
+        }
+
+        form {
+            max-width: 500px;
+
+            input {
+                width: 100%;
+                padding: .8rem 1rem;
+                border-radius: 25px;
+                outline: none;
+                border: #C4C4C4;
+            }
+
+            .flex {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            ::placeholder {
+                color: #C4C4C4;
+                font-size: 18px;
+            }
+
+        }
+
+        button {
+            padding: .9rem 2.5rem;
+            border-radius: 18px;
+            color: #5E5DBA;
+            border: 3px solid #5E5DBA;
+            font-size: 18px;
+            display: block;
+            margin: 2rem auto;
+            background-color: white;
+
+        }
+
+        h5 {
+            color: #5E5DBA;
+            font-size: 18px;
+        }
+
+        a {
+            color: #FDB827;
+        }
+    }
+}

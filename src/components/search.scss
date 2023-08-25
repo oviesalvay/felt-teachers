@@ -1,0 +1,11 @@
+@import '../scss/mixins';
+
+
+.search{
+    @include flex-align-center;
+    background-color: #FFFFFF;
+    padding: 0rem 1rem;
+    border-radius: 30px;
+    margin: 4rem 2rem;
+    width:50%;
+}

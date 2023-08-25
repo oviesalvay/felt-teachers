@@ -1,11 +1,33 @@
 @import '../scss/mixins';
 
+.intro{
 
-.search{
-    @include flex-align-center;
+.introduction{
     background-color: #FFFFFF;
-    padding: .1rem 2rem;
-    border-radius: 30px;
-    margin: 4rem 2rem;
-    width:60%;
+// @include padding-top;
+padding: 3rem 4rem;
+border-radius: 20px;
+ box-shadow: 0px 4px 20px 0px #0000000D;
+  margin: 3rem 28rem 0 2rem;
+ 
+ .mathematics{
+    display: block;
+    margin: 0 auto;
+    padding: 2rem 0;
+    
+    a{
+        margin: 0 18rem;
+        color:#000000;
+        font-size: 18px;
+        font-family: 'Montserrat';
+    }
+}
+    .teachers{
+        @include flex-align-center;
+    }
+}
+p{
+    max-width: 800px;
+    text-align:left;
+}
 }

@@ -1,0 +1,16 @@
+// @import '../scss/mixins';
+
+button{
+    background:#5E5DBA;
+    color:#F2F2F2;
+    border:1px solid #F2F2F2;
+    border-radius: 20px;
+    padding: 1rem 4rem;
+    text-align: start;
+    font-size: 15px;
+    margin: 2rem 0;
+}
+.connectbutton{
+    padding: 3rem;
+    color:red;
+}

@@ -2,9 +2,7 @@ import Ellipse from '../assets/Ellipse.svg';
 import '../styles/teacher.scss';
 import {Button}  from "../components/button/button";
 import yellow  from '../assets/yellow.png';
-import phone from '../assets/phone.png';
-import email from '../assets/email.png';
-import location from '../assets/location.png';
+import About from '../components/about/about';
 import Experience from '../components/experiences/experience';
 
 
@@ -35,41 +33,7 @@ const Teacher = () =>{
     </div> 
     <p>I am a secondary school teacher with 5 years of
          experience in working with teenagers between the ages 10-18</p>
-         <div className='about'>
-            <div className='about-me'>
-                <div className='phone-number'>
-                <div>
-                    <img src={phone}alt=""/>
-                </div>
-                <div>
-                    <p>Phone Number</p>
-                </div>
-                </div>
-               08090000100
-            </div>
-            <div className='about-me'>
-            <div className='phone-number'>
-                <div>
-                    <img src={email}alt=""/>
-                </div>
-                <div>
-                    <p>Email Address</p>
-                </div>
-            </div>
-                centurionconfidence@gmail.com
-            </div>
-            <div className='about-me'>
-            <div className='phone-number'>
-                <div>
-                    <img src={location}alt=""/>
-                </div>
-                <div>
-                    <p>Location</p>
-                </div>
-                </div>
-                Lagos, Nigeria
-            </div>
-         </div>
+         <About/>             
          <Experience/>
 </div>
     )

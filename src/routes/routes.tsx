@@ -6,7 +6,7 @@ import SignUp from '../views/registeration/signup'
 import Sign from '../views/registeration/sign';
 import Signing from '../views/registeration/signing';
 import Login from "../views/registeration/login";
-import Navbar from "../components/navbar";
+import Navbar from "../components/navbar/navbar";
 
 const Views = () => {
     return (

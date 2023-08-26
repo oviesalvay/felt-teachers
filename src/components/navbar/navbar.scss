@@ -5,9 +5,13 @@ header{
 @include padding;
 background-color: #FFFFFF;
 padding-bottom: 0;
+position: fixed;
+width:91%;
+z-index: 10;
 
 nav{
         @include flexbox;
+        // @include padding;
 
         .logo{
             @include flexbox;

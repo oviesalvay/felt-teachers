@@ -1,0 +1,21 @@
+@import '../../scss/mixins';
+
+.about{
+    @include flex-align-center;
+    @include padding;
+.about-me{
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 20px 0px #21209C33;
+    padding: 0rem 3rem;
+    border-radius: 25px;
+
+    #number{
+        text-align: center;
+    }
+}
+    .phone-number{
+        display: flex;
+        align-items: center;
+        gap:1rem;
+    }
+}

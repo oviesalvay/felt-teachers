@@ -1,7 +1,7 @@
-import Subtract from '../assets/Subtract.png';
+import Subtract from '../../assets/Subtract.png';
 import { NavLink } from 'react-router-dom';
-import Ellipse from '../assets/Ellipse.svg';
-import '../components/navbar.scss';
+import Ellipse from '../../assets/Ellipse.svg';
+import '../../components/navbar/navbar.scss';
 
 const Navbar = () =>{
     return(

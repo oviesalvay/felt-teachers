@@ -1,0 +1,47 @@
+@import '../../scss/mixins';
+
+.testPage{
+    .question{
+        background-color: #FFFFFF;
+    }
+    .test, #question, p{
+        font-size: 24px;
+        font-weight: 500;
+        font-family: 'monsterrat';
+
+        #question{
+            color:#5E5DBA;
+        }
+        form{
+            input{
+                margin: .8rem .5rem;
+            }
+        }
+    }
+    .next{
+        @include flex-align-center;
+        font-size: 24px;
+        font-family: 'monsterrat';
+        font-weight: 700;
+        margin: 3rem auto;
+
+        a{
+            text-decoration: none;
+        }
+        .begin-test{
+            background-color:#5E5DBA;
+            color:#F2F2F2;
+            border:1px solid #F2F2F2;
+            border-radius: 20px;
+            padding: 1rem 4rem;
+            text-align: start;
+            font-size: 15px;
+            margin: 2rem auto;
+            display: block;
+            font-size: 24px;
+        font-family: 'monsterrat';
+        font-weight: 700;
+            
+        }
+    }
+}

@@ -1,17 +1,17 @@
-@import '../scss/mixins';
+@import '../../scss/mixins';
 
 
 header{
-@include padding;
-background-color: #FFFFFF;
-padding-bottom: 0;
-position: fixed;
-width:91%;
-z-index: 10;
-
-nav{
+    background-color: #FFFFFF;
+    padding-bottom: 0;
+    // position: fixed;
+    // width:91%;
+    // z-index: 10;
+    
+    nav{
+    @include padding;
         @include flexbox;
-        // @include padding;
+
 
         .logo{
             @include flexbox;
@@ -27,6 +27,14 @@ nav{
                 font-size: 24px;
                 font-family: 'Montserrat';
             }
+        }
+    }
+}
+@media screen and (max-width:980px){
+    nav{
+        a, .logo img{
+            display:none;
+
         }
     }
 }

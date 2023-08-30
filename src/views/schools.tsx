@@ -22,8 +22,8 @@ export const School: FC = () => {
         <Search/>
         <h3>Search for Qualified Teachers by Subject Category</h3>
                 <div className="subject-intro">
-                    <div>
-<Button type="none" content="MATHEMATICS"/>
+                    <div>  
+  <Button type ="none" content="Mathematics"/>
 <Button type="none" content="PHYSICS"/>
 <Button type="none" content="FURTHER MATHEMATICS"/>
 <Button type="none" content="GEOGRAPHY"/>

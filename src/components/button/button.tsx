@@ -17,7 +17,7 @@ interface linkAttributes{
 }
 export const Button: FC<btnAttributes>=({content, onClick, className, id, type})=>{
     return(
-        <div className={`${className} button`}>
+        <div className={`${className} buttoned`}>
             <button type={type} id={id} onClick={onClick}>{content}
             </button>
         </div>
@@ -26,6 +26,14 @@ export const Button: FC<btnAttributes>=({content, onClick, className, id, type})
 export const ConnectButton: FC<linkAttributes>=({content, onClick, className, id, type})=>{
     return(
         <div className={`${className} connectbutton`}>
+            <button type={type} id={id} onClick={onClick}>{content}
+            </button>
+        </div>
+    )
+}
+export const SignButton: FC<linkAttributes>=({content, onClick, className, id, type})=>{
+    return(
+        <div className={`${className} signbutton`}>
             <button type={type} id={id} onClick={onClick}>{content}
             </button>
         </div>

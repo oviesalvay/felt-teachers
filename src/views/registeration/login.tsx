@@ -2,6 +2,8 @@ import { FC, useState } from "react";
 import { useFormik } from 'formik';
 import { signupSchema } from "../../schema";
 import '../registeration/login.scss';
+import circle from '../../assets/circle.png';
+import yellow from '../../assets/yellow.png';
 
 
 export const Login: FC = () => {
@@ -21,6 +23,9 @@ export const Login: FC = () => {
     });
     return (
         <section className="login">
+            <img src={circle} alt="" className="circle"/>
+            <img src={yellow} alt="" className="yellow"/>
+            <img src={yellow} alt="" className="yellowed"/>
             <div className="log">
                 <h2>Login</h2>
                 <div id="new">
@@ -43,7 +48,7 @@ export const Login: FC = () => {
                                 <h4>Forgot Password?</h4>
                             </div>
                             <div>
-                                <button className="login">Login</button>
+                                <button className="loging">Login</button>
                             </div>
                         </div>
                         <h5>Don’t have an account? <a>Sign up</a></h5>
@@ -62,7 +67,7 @@ export const Login: FC = () => {
                                 <h4>Forgot Password?</h4>
                             </div>
                             <div>
-                                <button className="login">Login</button>
+                                <button className="loging">Login</button>
                             </div>
                         </div>
                         <h5>Don’t have an account? <a>Sign up</a></h5>
@@ -81,7 +86,7 @@ export const Login: FC = () => {
                                 <h4>Forgot Password?</h4>
                             </div>
                             <div>
-                                <button className="login">Login</button>
+                                <button className="loging">Login</button>
                             </div>
                         </div>
                         <h5>Don’t have an account? <a>Sign up</a></h5>

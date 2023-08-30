@@ -1,6 +1,6 @@
 // @import '../scss/mixins';
 
-button{
+.buttoned{
     background:#5E5DBA;
     color:#F2F2F2;
     border:1px solid #F2F2F2;
@@ -10,7 +10,25 @@ button{
     font-size: 15px;
     margin: 2rem 0;
 }
+button{
+    background-color: transparent;
+    border:none;
+    color:#F2F2F2;
+}
 .connectbutton{
-    padding: 3rem;
+    // padding: 3rem;
     color:red;
+}
+.signbutton{
+    background:#5E5DBA;
+    color:#F2F2F2;
+    border:1px solid #F2F2F2;
+    border-radius: 20px;
+    padding: 1rem 4rem;
+    text-align:start;
+    margin: 2rem 0;
+   font-size: 20px;
+   font-weight: 500;
+   font-family: 'monsterrat';
+
 }

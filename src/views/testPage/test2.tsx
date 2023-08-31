@@ -1,11 +1,8 @@
-import '../../scss/_mixins.scss';
-// import '../../styles/testPage.scss';
-import '../testPage/test.scss';
-import { Link } from 'react-router-dom';
-import { SignButton } from '../../components/button/button';
-// import { Button } from '../../components/button/button';
+import { Link } from "react-router-dom";
+import { SignButton } from "../../components/button/button";
 
-const Test = () =>{
+
+const Test2 = () =>{
     return(
         <section className="testPage">
 <div className='question'>
@@ -25,7 +22,7 @@ const Test = () =>{
   <label htmlFor="">True</label><br></br>
   <input type="radio"  value="False" name='true'/>
   <label htmlFor="">False</label><br></br>
-  <input type="radio"  value="all of the above" name='true'/>
+<input type="radio"  value="all of the above" name='true'/>
 <label htmlFor="">All of the above</label><br></br>
     </form>
     <div className='next'>
@@ -34,7 +31,7 @@ const Test = () =>{
     <a href="prev">Prev</a>
     </Link>
 </div>
-<Link to='/test2'>
+<Link to="/SubmitTest">
 <button className='begin-test'>Next</button>
 </Link>
 </div>
@@ -42,4 +39,4 @@ const Test = () =>{
 </section>
     )
 }
-export default Test;
+export default Test2;

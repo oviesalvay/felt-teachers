@@ -10,8 +10,13 @@
 @mixin flex-align-center{
     display: flex;
     align-items: center;
-    gap:2rem;
+    gap:1rem;
 }
 @mixin padding-top{
     padding: 3rem 2rem 2rem 2rem;
+}
+@mixin flex-space-between{
+    display: flex;
+    justify-content: space-between;
+    gap:1rem;
 }

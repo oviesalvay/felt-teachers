@@ -1,11 +1,7 @@
-import '../../scss/_mixins.scss';
-// import '../../styles/testPage.scss';
-import '../testPage/test.scss';
-import { Link } from 'react-router-dom';
-import { SignButton } from '../../components/button/button';
-// import { Button } from '../../components/button/button';
+import { SignButton } from "../../components/button/button";
+import { Link } from "react-router-dom";
 
-const Test = () =>{
+const SubmitTest = () =>{
     return(
         <section className="testPage">
 <div className='question'>
@@ -29,17 +25,12 @@ const Test = () =>{
 <label htmlFor="">All of the above</label><br></br>
     </form>
     <div className='next'>
-<div>
-    <Link to ="/testPage">
-    <a href="prev">Prev</a>
-    </Link>
-</div>
 <Link to='/test2'>
-<button className='begin-test'>Next</button>
+<button className='begin-test'>Submit</button>
 </Link>
 </div>
     </div>
 </section>
     )
 }
-export default Test;
+export default SubmitTest;

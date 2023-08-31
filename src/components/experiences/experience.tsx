@@ -1,9 +1,14 @@
 import '../experiences/experience.scss';
+// import {useState} from 'react'
 
 
-const Experience = () =>{
-    return(
-        <></>
-    )
+
+
+function Experience() {
+  return(
+    <></>
+  )
 }
+
+
 export default Experience;

@@ -11,10 +11,10 @@ export const School: FC = () => {
         <section className="courses">
         <div className="subjects">
                     <hgroup>
-                        <button onClick={() => setTab(1)} className={tab === 1 ? 'current' : ''}>Science</button>
-                        <button onClick={() => setTab(2)} className={tab === 2 ? 'current' : ''}>Arts</button>
-                        <button onClick={() => setTab(3)} className={tab === 3 ? 'current' : ''}>Commercial</button>
-                        <button onClick={() => setTab(4)} className={tab === 4 ? 'current' : ''}>Nursery and Primary</button> 
+  <button onClick={() => setTab(1)} className={tab === 1 ? 'current' : ''}>Science</button>
+  <button onClick={() => setTab(2)} className={tab === 2 ? 'current' : ''}>Arts</button>
+ <button onClick={() => setTab(3)} className={tab === 3 ? 'current' : ''}>Commercial</button>
+ <button onClick={() => setTab(4)} className={tab === 4 ? 'current' : ''}>Nursery and Primary</button> 
                     </hgroup>
                 </div>
             {tab === 1 &&

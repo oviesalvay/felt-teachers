@@ -6,9 +6,11 @@ import Frame from '../assets/Frame.png';
 
 const HomePage = () => {
     return (
+        <>
+        <section className="intro-to">
         <section className='intro'>
         <Search/>
-        <section className='introduction'>
+        <div className='introduction'>
             <div className='mathematics'>
             <div className='teachers'>
             <div>
@@ -27,7 +29,7 @@ const HomePage = () => {
 <p>At Alpha Rehonot group of schools, we Lorem Ipsum Donor emet
      Lorem Ipsum Donor emet Lorem Ipsum Donor emet Lorem Ipsum Donor emet
       Lorem Ipsum Donor emet Lorem Ipsum Donor emet Lorem Ipsum Donor emet </p>
-      <Link to='/view'>view details</Link>
+      <Link to='/view'>View Details</Link>
       </div>
       <div className="mathematics">
         <div className='teachers'>
@@ -47,7 +49,7 @@ const HomePage = () => {
 <p>At Alpha Rehonot group of schools, we Lorem Ipsum Donor emet
      Lorem Ipsum Donor emet Lorem Ipsum Donor emet Lorem Ipsum Donor emet
       Lorem Ipsum Donor emet Lorem Ipsum Donor emet Lorem Ipsum Donor emet </p>
-      <Link to='/view'>view details</Link>
+      <Link to='/view'>View Details</Link>
       </div>
       <div className="mathematics">
         <div className='teachers'>
@@ -67,7 +69,7 @@ const HomePage = () => {
 <p>At Alpha Rehonot group of schools, we Lorem Ipsum Donor emet
  Lorem Ipsum Donor emet Lorem Ipsum Donor emet Lorem Ipsum Donor emet
   Lorem Ipsum Donor emet Lorem Ipsum Donor emet Lorem Ipsum Donor emet </p>
-  <Link to='/view'>view details</Link>
+  <Link to='/view'>View Details</Link>
   </div>
   <div className="mathematics">
         <div className='teachers'>
@@ -87,10 +89,19 @@ const HomePage = () => {
 <p>At Alpha Rehonot group of schools, we Lorem Ipsum Donor emet
  Lorem Ipsum Donor emet Lorem Ipsum Donor emet Lorem Ipsum Donor emet
   Lorem Ipsum Donor emet Lorem Ipsum Donor emet Lorem Ipsum Donor emet </p>
-  <Link to='/view'>view details</Link>
+  <Link to='/view'>View Details</Link>
   </div>
-    </section>
+    </div>
         </section>
+    <div className="notification">
+        <h4>Notifications</h4>
+        <h6>Today</h6>
+        <p>AlphaRehobot Schools Requested to connect with you<br></br><span>2hours ago</span><span className="time"></span></p>
+        <p>AlphaRehobot Schools Requested to connect with you<br></br><span>2hours ago</span><span className="time"></span></p>
+        <p>AlphaRehobot Schools Requested to connect with you<br></br><span>2hours ago</span></p>
+    </div>
+        </section>
+        </>
     )
 }
 

@@ -1,7 +1,7 @@
 @import '../scss/mixins';
 
 .testPage{
-    @include padding;
+    padding: .2rem 0;
     display: flex;
     gap:5rem;
 
@@ -42,4 +42,12 @@ a{
     text-decoration: none;
 }
 }
+}
+@media screen and (max-width:980px){
+   .testPage{
+    .subject{
+        background-color: transparent;
+        padding: 0;
+    }
+   }
 }

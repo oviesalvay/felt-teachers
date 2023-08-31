@@ -1,17 +1,24 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap');
-html,
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+  html,
 body {
     overflow-x: hidden;
 }
 body{
-    background-color: #E6E6E8;
+    background-color: #FFFFFF;
 }
 h1{
     font-family: 'Montserrat','Open Sans';
     color:#5E5DBA;
     font-weight: 500px;
     font-size: 35px;
+}
+h2{
+    font-weight: 600;
+    font-size: 24px;
+    font-family: 'monsterrat';
 }
 h5{
         font-weight: 'monsterrat';

@@ -1,0 +1,45 @@
+@import '../../scss/mixins';
+
+.education {
+    @include padding;
+    color: #23120B;
+    font-family: 'Montserrat';
+    font-size: 26px;
+    font-weight: 400;
+
+
+    .feild__toggler {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            rotate: 180deg;
+            transition: all .3s ease;
+        }
+
+        .rotate {
+            rotate: 0deg;
+        }
+    }
+
+    >div {
+        padding: 1rem 0;
+    }
+
+    &__background {
+        display: grid;
+        grid-template-columns: 200px 200px max-content;
+
+        p {
+            padding: .7rem 1rem;
+            text-align: center;
+            margin: 0;
+
+            &:nth-child(2) {
+                border-left: 1px solid #FDB827;
+                border-right: 1px solid #FDB827;
+            }
+        }
+    }
+}

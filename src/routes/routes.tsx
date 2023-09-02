@@ -13,6 +13,7 @@ import SubmitTest from "../views/testPage/submitTest";
 import PasswordRecovery from "../views/registeration/password/passwordRecovery";
 import TeacherProfile from "../views/profile/teacherprofile";
 import ParentProfile from "../views/profile/parentprofile";
+import SchoolProfile from "../views/profile/schoolprofile";
 const Views = () => {
     return (
         <>
@@ -32,6 +33,7 @@ const Views = () => {
                     <Route path="/submitTest" element={<SubmitTest />} />
                     <Route path="/password-recovery" element={<PasswordRecovery />} />
                     <Route path="/parentProfile" element={<ParentProfile />} />
+                    <Route path="/schoolProfile" element={<SchoolProfile />} />
                 </Routes>
             </BrowserRouter>
         </>

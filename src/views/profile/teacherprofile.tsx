@@ -1,7 +1,7 @@
-import Ellipse from '../assets/Ellipse.svg';
-import '../styles/teacher.scss';
-import { Button } from "../../components/button/button";
-import yellow from '../assets/yellow.png';
+import Ellipse from '../../assets/Ellipse.svg';
+import '../../styles/teacher.scss';
+import { ConnectButton } from "../../components/button/button";
+import yellow from '../../assets/yellow.png';
 import About from '../../components/about/about';
 import Experience from '../../components/experiences/experience';
 import EducationalBackground from '../../components/education/educationalbackground';
@@ -28,7 +28,7 @@ const TeacherProfile = () => {
                     </div>
                 </div>
                 <div>
-                    <Button type="none" content="connect" />
+                    <ConnectButton type='none' content="connect" />
                     <img src={yellow} alt="" />
                 </div>
             </div>
@@ -39,6 +39,7 @@ const TeacherProfile = () => {
             <EducationalBackground data={educationalBackground} />
             <EducationalBackground data={workExperience} />
             <EducationalBackground data={CV} />
+
         </div>
     )
 }

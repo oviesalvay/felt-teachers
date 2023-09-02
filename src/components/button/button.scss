@@ -1,34 +1,42 @@
 // @import '../scss/mixins';
 
-.buttoned{
-    background:#5E5DBA;
-    color:#F2F2F2;
-    border:1px solid #F2F2F2;
+.buttoned {
+    background: #5E5DBA;
+    color: #F2F2F2;
+    border: 1px solid #F2F2F2;
     border-radius: 20px;
     padding: 1rem 4rem;
     text-align: start;
     font-size: 15px;
     margin: 2rem 0;
 }
-button{
+
+.buttoned {
     background-color: transparent;
-    border:none;
-    color:#F2F2F2;
+    border: none;
+    color: #F2F2F2;
 }
-.connectbutton{
-    // padding: 3rem;
-    color:red;
+
+.connectbutton {
+    border: 3px solid #878787;
+    padding: 1rem 4rem;
+    font-family: 'Poppins';
+    font-size: 26px;
+    font-weight: 700;
+    color: #878787;
+    border-radius: 25px;
 }
-.signbutton{
-    background:#5E5DBA;
-    color:#F2F2F2;
-    border:1px solid #F2F2F2;
+
+.signbutton {
+    background: #5E5DBA;
+    color: #F2F2F2;
+    border: 1px solid #F2F2F2;
     border-radius: 20px;
     padding: 1rem 4rem;
-    text-align:start;
+    text-align: start;
     margin: 2rem 0;
-   font-size: 20px;
-   font-weight: 500;
-   font-family: 'monsterrat';
+    // font-size: 20px;
+    font-weight: 500;
+    // font-family: 'monsterrat';
 
 }

@@ -1,25 +1,26 @@
 @import '../../scss/mixins';
 
 
-header{
+header {
     background-color: #FFFFFF;
-    padding-bottom: 0;
+    // padding-bottom: 0;
     // position: fixed;
     // width:91%;
     // z-index: 10;
-    
-    nav{
-    @include padding;
+    padding: 0 3.5rem;
+
+    nav {
         @include flexbox;
 
 
-        .logo{
+        .logo {
             @include flexbox;
         }
-        .navlinks{
+
+        .navlinks {
             @include flex-align-center;
 
-            a{
+            a {
                 margin: 0 1rem;
                 text-decoration: none;
                 color: #5E5DBA;
@@ -30,10 +31,13 @@ header{
         }
     }
 }
-@media screen and (max-width:980px){
-    nav{
-        a, .logo img{
-            display:none;
+
+@media screen and (max-width:980px) {
+    nav {
+
+        a,
+        .logo img {
+            display: none;
 
         }
     }

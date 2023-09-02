@@ -1,41 +1,36 @@
 import { FC } from "react";
 import '../button/button.scss';
 
-interface btnAttributes{
+interface btnAttributes {
     content: string
     onClick?: any
     className?: string
     id?: string
-    type:any
+    type: unknown
 }
-interface linkAttributes{
+interface linkAttributes {
     content: string
     onClick?: any
     className?: string
     id?: string
-    type:any  
+    type: any
 }
-export const Button: FC<btnAttributes>=({content, onClick, className, id, type})=>{
-    return(
-        <div className={`${className} buttoned`}>
-            <button type={type} id={id} onClick={onClick}>{content}
-            </button>
+export const Buttoned: FC<btnAttributes> = ({ content, onClick, className, id, type }) => {
+    return (
+        <div className={`${className} Buttoned`}>
+            <button type={type} id={id} onClick={onClick}>{content}</button>
         </div>
     )
 }
-export const ConnectButton: FC<linkAttributes>=({content, onClick, className, id, type})=>{
-    return(
-        <div className={`${className} connectbutton`}>
-            <button type={type} id={id} onClick={onClick}>{content}
-            </button>
-        </div>
+export const ConnectButton: FC<linkAttributes> = ({ content, onClick, type, id, }) => {
+    return (
+        <button className="connectbutton" type={type} id={id} onClick={onClick}>{content}
+        </button>
     )
 }
-export const SignButton: FC<linkAttributes>=({content, onClick, className, id, type})=>{
-    return(
-        <div className={`${className} signbutton`}>
-            <button type={type} id={id} onClick={onClick}>{content}
-            </button>
-        </div>
+export const SignButton: FC<linkAttributes> = ({ content, onClick, id, }) => {
+    return (
+        <button className="signbutton" id={id} onClick={onClick}>{content}
+        </button>
     )
 }

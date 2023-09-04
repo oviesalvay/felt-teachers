@@ -26,13 +26,15 @@
 
 @media screen and (max-width:980px) {
     .about {
+
         .about-me {
             padding: 0 1rem;
-            // display: block;
         }
 
         .phone-number {
-            // margin: 1rem auto;
+            display: block;
+            text-align: center;
+            padding: 1rem 0 0 0;
         }
     }
 }

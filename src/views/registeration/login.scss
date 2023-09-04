@@ -11,6 +11,7 @@
         bottom: 15rem;
         left: 9rem;
     }
+
     .circle {
         position: absolute;
         bottom: 26rem;
@@ -18,21 +19,25 @@
         // left: 15rem;
         width: 6%;
     }
+
     .yellowed {
         position: absolute;
         bottom: 18rem;
         right: 3rem;
     }
+
     h2 {
         color: #5E5DBA;
         text-align: center;
     }
+
     .log {
         background-color: #E6E6E8;
         padding: 2rem 3rem;
         margin: 2rem 20rem;
         border-radius: 20px;
     }
+
     #new {
         text-align: center;
 
@@ -44,10 +49,12 @@
             font-size: 20px;
             outline: none;
         }
-            .current:hover {
-                color: #5E5DBA;
-            }
+
+        .current:hover {
+            color: #5E5DBA;
+        }
     }
+
     form {
         max-width: 500px;
         margin: 2rem 0 0 0;
@@ -57,10 +64,11 @@
             width: 100%;
             border-radius: 25px;
             font-size: 15px;
-            border:0.5px #FFFFFF;
+            border: 0.5px #FFFFFF;
             outline: none;
         }
     }
+
     .forget {
         @include flexbox;
 
@@ -68,6 +76,7 @@
             color: #FDB827;
             font-size: 22px;
         }
+
         .loging {
             border: 3px solid #5E5DBA;
             background-color: #FFFFFF;
@@ -76,22 +85,28 @@
             border-radius: 15px;
         }
     }
+
     h5 {
         text-align: center;
         color: #5E5DBA;
         font-size: 22px;
     }
+
     a {
         color: #FDB827;
         font-size: 22px;
     }
 }
-@media screen and (max-width:480){
-    .login{
-        padding: 0;
-        .log{
-            margin:0;
-            padding: 0;
-        }
+
+@media screen and (max-width:1233) {
+    // 
+
+    .log {
+        margin: 0;
+        border-radius: 60px;
     }
+
+    // login {
+    //     padding: 0;
+    // }
 }

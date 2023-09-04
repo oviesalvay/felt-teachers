@@ -29,9 +29,9 @@ const EducationalBackground: FC<experience> = ({ data }) => {
                             <>
                                 {showQualification &&
                                     <div key={index} className='education__background'>
-                                        <p key={index}>{qualifications.degree}</p>
-                                        <p key={index} >{qualifications.year}</p >
-                                        <p key={index}>{qualifications.school}</p>
+                                        <p>{qualifications.degree}</p>
+                                        <p >{qualifications.year}</p >
+                                        <p>{qualifications.school}</p>
                                     </div>
                                 }
                             </>

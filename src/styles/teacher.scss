@@ -111,6 +111,8 @@
 
 @media screen and (max-width:980px) {
     .teachers-profile {
+        margin: 2rem .6rem;
+
         .teachers {
             padding: 6rem 1rem;
 
@@ -128,6 +130,10 @@
 
             .name {
                 display: block;
+            }
+
+            .yellow {
+                width: 10%;
             }
         }
     }

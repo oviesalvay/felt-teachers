@@ -23,3 +23,16 @@
         gap: 1rem;
     }
 }
+
+@media screen and (max-width:980px) {
+    .about {
+        .about-me {
+            padding: 0 1rem;
+            // display: block;
+        }
+
+        .phone-number {
+            // margin: 1rem auto;
+        }
+    }
+}

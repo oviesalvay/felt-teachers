@@ -5,14 +5,38 @@
     background-color: #E6E6E8;
 
     .teachers {
-        background-color: #C4C4C4;
         padding: 6rem 2rem;
+        background-color: #C4C4C4;
 
         figure img {
             margin: 0 0 -8rem 0rem;
-            padding-bottom: .6rem;
-            z-index: 1;
+            padding-bottom: -6rem;
             width: 15%;
+        }
+
+        .edit {
+            width: 85px;
+            border: 3px solid #5E5DBA;
+            padding: 1rem 2rem;
+            text-align: center;
+            border-radius: 10px;
+            background-color: #FFFFFF;
+            box-shadow: 0px 4px 20px 0px #033E6833;
+            float: right;
+
+            .edit img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .edit-btn {
+                font-family: "Poppins";
+                font-size: 20px;
+                background-color: transparent;
+                font-weight: 700;
+                color: #5E5DBA;
+
+            }
         }
     }
 
@@ -33,6 +57,32 @@
                 align-items: center;
             }
 
+            #approved {
+                display: flex;
+                align-items: center;
+
+                h5 {
+                    color: #FDB827;
+                }
+
+                span {
+                    background-color: #FDB827;
+                }
+            }
+
+            .pending {
+                display: flex;
+                align-items: center;
+
+                span {
+                    background-color: #F45050;
+                }
+
+                h5 {
+                    color: #F45050;
+                }
+            }
+
             span {
                 display: block;
                 background-color: #2CC706;
@@ -46,10 +96,39 @@
             }
         }
 
-        img {
+        .yellow {
             position: absolute;
-            right: 2rem;
+            right: 1rem;
+            bottom: 1rem;
             width: 2%;
+        }
+    }
+
+    #school {
+        @include padding;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .teachers-profile {
+        .teachers {
+            padding: 6rem 1rem;
+
+            .edit {
+                margin-top: -4rem;
+            }
+
+            figure img {
+                width: 50%;
+            }
+        }
+
+        .profile {
+            display: block;
+
+            .name {
+                display: block;
+            }
         }
     }
 }

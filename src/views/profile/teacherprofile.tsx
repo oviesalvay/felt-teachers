@@ -3,21 +3,43 @@ import '../../styles/teacher.scss';
 import { ConnectButton } from "../../components/button/button";
 import yellow from '../../assets/yellow.png';
 import About from '../../components/about/about';
+import editPen from '../../assets/editPen.png';
 import Experience from '../../components/experiences/experience';
 import EducationalBackground from '../../components/education/educationalbackground';
 import { educationalBackground, workExperience, CV } from '../../components/data/qualification';
 
+
+// const editableText = document.getElementById('editableText');
+// const editbutton = document.getElementById('editButton');
+// let isEditing = false;
+
+// editbutton.addEventListener('click', () => {
+//     isEditing = !isEditing; // Toggle the editing state
+//     if (isEditing) {
+//         editableText.contentEditable = 'true'; // Enable text editing
+//         editButton.textContent = 'Save'; // Change button text to "Save"
+//     } else {
+//         editableText.contentEditable = 'false'; // Disable text editing
+//         editButton.textContent = 'Edit'; // Change button text back to "Edit"
+//     }
+// });
+
 const TeacherProfile = () => {
     return (
         <div className='teachers-profile'>
+            {/* <div className='profile-intro'> */}
             <div className="teachers">
+                <div className='edit'>
+                    <img src={editPen} alt="" />
+                    <button className='edit-btn'>EDIT</button>
+                </div>
                 <figure>
                     <img src={Ellipse} alt="" />
                 </figure>
             </div>
             <div className='profile'>
+                <h2>CENTURION CONFIDENCE ETAH</h2>
                 <div className='name'>
-                    <h2>CENTURION CONFIDENCE ETAH</h2>
                     <div className='approved'>
                         <div>
                             <span></span>
@@ -29,20 +51,18 @@ const TeacherProfile = () => {
                 </div>
                 <div>
                     <ConnectButton type='none' content="connect" />
-                    <img src={yellow} alt="" />
+                    <img src={yellow} alt="" className='yellow' />
                 </div>
             </div>
-            <p>I am a secondary school teacher with 5 years of
+            <p id='school'>I am a secondary school teacher with 5 years of
                 experience in working with teenagers between the ages 10-18</p>
             <About />
             <Experience />
             <EducationalBackground data={educationalBackground} />
-            <span className='work'></span>
             <EducationalBackground data={workExperience} />
-            <span className='work'></span>
             <EducationalBackground data={CV} />
-
         </div>
+        // </div>
     )
 }
 export default TeacherProfile;

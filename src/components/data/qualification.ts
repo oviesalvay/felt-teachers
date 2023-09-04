@@ -57,6 +57,6 @@ export const requirement: Array<object> =[
 title:"REQUIREMENTS"
     },
     {
-        degree:"We needneed someone with at lease a B.Sc in Sciences to teach Mathematics . 2+years of experience is an advantage"   
+        degree:"We need someone with at lease a B.Sc in Sciences to teach Mathematics . 2+years of experience is an advantage"   
     },
 ]

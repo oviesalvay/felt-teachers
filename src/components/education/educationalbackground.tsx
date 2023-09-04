@@ -14,6 +14,7 @@ const EducationalBackground: FC<experience> = ({ data }) => {
     return (
         <>
             <div className='education'>
+                <span className="toggler"></span>
                 <div onClick={() => setShowQualification(!showQualification)} className="feild__toggler">
                     {data.map((qualifications: any, index: number) => {
                         return (

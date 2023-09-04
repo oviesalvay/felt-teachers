@@ -1,22 +1,26 @@
 @mixin padding {
     padding: 1rem clamp(1rem, 4vw, 6rem);
 }
-@mixin flexbox{
+
+@mixin flexbox {
     display: flex;
     justify-content: space-between;
-    gap:1rem;
+    gap: 1rem;
     align-items: center;
 }
-@mixin flex-align-center{
+
+@mixin flex-align-center {
     display: flex;
     align-items: center;
-    gap:1rem;
+    gap: 2rem;
 }
-@mixin padding-top{
+
+@mixin padding-top {
     padding: 3rem 2rem 2rem 2rem;
 }
-@mixin flex-space-between{
+
+@mixin flex-space-between {
     display: flex;
     justify-content: space-between;
-    gap:1rem;
+    gap: 1rem;
 }

@@ -1,17 +1,20 @@
 // @import '../scss/mixins';
 
-.buttoned {
+.Buttoned {
     background: #5E5DBA;
     color: #F2F2F2;
-    border: 1px solid #F2F2F2;
-    border-radius: 20px;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
     padding: 1rem 4rem;
-    text-align: start;
-    font-size: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'monsterrat';
     margin: 2rem 0;
+    box-shadow: 4px 4px 10px 4px #21209C33;
 }
 
-.buttoned {
+button {
     background-color: transparent;
     border: none;
     color: #F2F2F2;

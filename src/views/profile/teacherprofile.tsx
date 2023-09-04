@@ -37,7 +37,9 @@ const TeacherProfile = () => {
             <About />
             <Experience />
             <EducationalBackground data={educationalBackground} />
+            <span className='work'></span>
             <EducationalBackground data={workExperience} />
+            <span className='work'></span>
             <EducationalBackground data={CV} />
 
         </div>

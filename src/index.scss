@@ -1,45 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;600&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
-
-  html,
+html,
 body {
     overflow-x: hidden;
 }
-body{
+
+body {
     background-color: #FFFFFF;
 }
-h1{
-    font-family: 'Montserrat','Open Sans';
-    color:#5E5DBA;
+
+h1 {
+    font-family: 'Montserrat', 'Open Sans';
+    color: #5E5DBA;
     font-weight: 500px;
     font-size: 35px;
 }
-h2{
+
+h2 {
     font-weight: 600;
     font-size: 24px;
     font-family: 'monsterrat';
 }
-h5{
-        font-weight: 'monsterrat';
-        font-size: 24px;
-    }
-h6{
-    color:#AEAEAE;
+
+h5 {
+    font-weight: 'monsterrat';
+    font-size: 24px;
+}
+
+h6 {
+    color: #AEAEAE;
     font-weight: 600;
     font-family: 'Montserrat';
 }
-p{
-   color: #000000;
-   font-size: 18px;
-   font-family: 'Open Sans';
-//    line-height: 40px;
+
+p {
+    color: #000000;
+    font-size: 18px;
+    font-family: 'Open Sans';
+    //    line-height: 40px;
 }
-li{
-    list-style:numeric;
-            margin:1rem 0;
-            color:#120E21;
-            font-family: 'montserrat';
-            font-size: 24px;
-            font-weight: 500;
+
+li {
+    list-style: numeric;
+    margin: 1rem 0;
+    color: #120E21;
+    font-family: 'montserrat';
+    font-size: 24px;
+    font-weight: 500;
 }

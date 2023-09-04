@@ -3,7 +3,7 @@
 .intro-to {
     background-color: #E6E6E8;
     @include padding;
-    @include flex-space-between;
+    @include flex-align-center;
 
     .intro {
         .introduction {
@@ -44,7 +44,7 @@
         background-color: #FFFFFF;
         border-radius: 25px;
         padding: 1rem;
-        margin: 3rem 0 7rem 0;
+        margin: 0 0 52rem 0;
         flex-basis: 300px;
 
         h4 {
@@ -77,11 +77,13 @@
 
 @media screen and (max-width:980px) {
     .intro-to {
+        display: block;
 
-        // display: block;
         .intro {
 
             .introduction {
+                padding: 1rem;
+
                 .mathematics {
                     .teachers {
                         display: block;
@@ -96,18 +98,13 @@
             .search {
                 width: 80%;
             }
+        }
 
-            .introduction {
-                // margin:1rem .8rem;
-                padding: 1rem;
+        .notification {
+            margin: 2rem 0;
 
-                .mathematics a {
-                    margin: 0;
-
-                    .teachers {
-                        display: block;
-                    }
-                }
+            .time {
+                width: 300px;
             }
         }
     }

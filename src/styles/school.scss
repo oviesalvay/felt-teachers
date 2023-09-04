@@ -1,36 +1,78 @@
 @import '../scss/mixins';
 
-.courses{
+.courses {
     @include flex-align-center;
     @include padding;
+    background-color: #E6E6E8;
+    box-shadow: 0px 4px 20px 0px #21209C1A;
+    flex-wrap: wrap;
+    flex-grow: 1;
 
-h3{
-    text-align: center;
-}
-    .subjects{
+    h3 {
+        text-align: center;
+        font-family: "Gemunu Libre";
+        font-weight: 400px;
+        font-size: 22px;
+    }
+
+    .subjects {
         background-color: #FFFFFF;
         border-radius: 25px;
-        box-shadow: 0px 4px 20px 0px #21209C1A;
-    
-        button{
+        flex-basis: 350px;
+
+        button {
             background-color: transparent;
-        display: block;
-        border:none;
-        margin: 1rem 3rem;
-        padding: 1rem 0rem;
-        color:#000000;
-        font-size: 18px;
-        font-family: "Open Sans";
+            display: block;
+            border: none;
+            margin: 1rem 3rem;
+            padding: 1rem 0rem;
+            color: #000000;
+            font-size: 18px;
+            font-family: "Open Sans";
+        }
+
+        :hover {
+            color: #5E5DBA;
+            transition: all ease .3s;
+        }
+
+        .science {
+            display: block;
+            background-color: #000000B2;
+            height: 0.5px;
+            width: 300px;
+            margin: 0 1rem;
+        }
     }
-    :hover{
-        color:#5E5DBA;
+
+    .subject-intro {
+        @include flex-align-center;
+        background-color: #FFFFFF;
+        flex-basis: 350px;
+        gap: 5rem;
+        border-radius: 20px;
+        padding: 1rem 3rem;
     }
-    }
-    .subject-intro{
-       @include flex-align-center;
-       background-color: #FFFFFF;
-    //    margin: 2rem 9rem;
-       border-radius: 20px;
-       padding: 3rem;
+}
+
+@media screen and (max-width:980px) {
+    .courses {
+        flex-direction: column-reverse;
+
+        .subjects {
+            margin: 2rem 2rem 0 0;
+
+            span {
+                width: 350px;
+            }
+
+        }
+
+        .subject-intro {
+            display: block;
+            gap: 0;
+            padding: 1rem 2rem;
+            margin: 0 2rem 0 0;
+        }
     }
 }

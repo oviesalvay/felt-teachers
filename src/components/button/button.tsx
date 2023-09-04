@@ -6,7 +6,7 @@ interface btnAttributes {
     onClick?: any
     className?: string
     id?: string
-    type: unknown
+    type: any
 }
 interface linkAttributes {
     content: string

@@ -95,18 +95,43 @@
     a {
         color: #FDB827;
         font-size: 22px;
+        text-decoration: none;
     }
 }
 
-@media screen and (max-width:1233) {
+@media screen and (max-width:590px) {
+
     // 
+    .login {
+        padding: 2rem 1rem;
 
-    .log {
-        margin: 0;
-        border-radius: 60px;
+        .yellowed {
+            top: 3rem;
+        }
+
+        .yellow {
+            bottom: 3rem;
+            left: 2rem;
+        }
+
+        .circle {
+            display: none;
+        }
+
+        .log {
+            margin: 0;
+            padding: 2rem 1rem;
+        }
+
+        form {
+            input {
+                width: 90%;
+            }
+        }
+
+        .forget {
+            display: block;
+            text-align: center;
+        }
     }
-
-    // login {
-    //     padding: 0;
-    // }
 }

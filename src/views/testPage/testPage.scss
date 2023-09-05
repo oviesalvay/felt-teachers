@@ -1,0 +1,77 @@
+@import '../../scss/mixins';
+
+.testPage {
+    background-color: #E6E6E8;
+    padding: .2rem 0;
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+
+    .subject {
+        background-color: #FFFFFF;
+        padding: 1rem 2rem 18rem 2rem;
+        flex-basis: 400px;
+
+        label {
+            font-weight: 'monsterrat';
+            font-size: 24px;
+        }
+
+        select {
+            color: #5E5DBA;
+            border: 1px solid #5E5DBA;
+            padding: .6rem .9rem;
+            margin: 1rem 0;
+            border-radius: 20px;
+            font-size: 24px;
+            font-family: 'monsterrat';
+            outline: none;
+        }
+    }
+
+    .instruction {
+        // padding: 1rem 5rem;
+        flex-basis: 400px;
+
+        .begin-test {
+            background-color: #5E5DBA;
+            color: #F2F2F2;
+            border: 1px solid #F2F2F2;
+            border-radius: 20px;
+            padding: 1rem 4rem;
+            text-align: start;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 2rem auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (max-width:980px) {
+    .testPage {
+        .subject {
+            padding: 0 3rem;
+
+            .signbutton {
+                display: block;
+                margin: 2rem auto;
+            }
+
+            form {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                margin: 1rem 0;
+            }
+        }
+
+        .instruction {
+            padding: 1rem;
+        }
+    }
+}

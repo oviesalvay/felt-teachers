@@ -2,7 +2,7 @@ import { useFormik } from 'formik';
 import { signupSchema } from "../../schema";
 import "../registeration/signup.scss";
 import yellow from "../../views/registeration/assest/yellow.png";
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import eclipse from "./assest/eclipse.png";
 
 
@@ -57,7 +57,7 @@ const Signing = () => {
                     {errors.passcode && touched.passcode && <p className='error'>{errors.passcode}</p>}<br></br>
                 </form>
                 <button disabled={isSubmitting} type="submit" className='submit'>{isSubmitting ? "Sign Up" : ""}Sign Up</button>
-                <h5>Already have an account?<a>Login</a></h5>
+                <h5>Already have an account? <Link to="/login"><a>Login</a></Link></h5>
             </section>
         </section>
     )

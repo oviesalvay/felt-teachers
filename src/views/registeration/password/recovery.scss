@@ -1,11 +1,103 @@
 @import '../../../scss/mixins';
+@import '../error.scss';
 
-.password-recovery{
+.password-recovery {
     // text-align: center;
     background-color: white;
     margin: 3rem 20rem;
-    .recovery{
+    position: relative;
+
+    .yellow {
+        position: absolute;
+        bottom: 4rem;
+        left: -5rem;
+    }
+
+    .yellowed {
+        bottom: 15rem;
+        position: absolute;
+        left: 58rem;
+        // top: 3rem;
+    }
+
+    .circle {
+        position: absolute;
+        // z-index: -10;
+        transform: translate(-9rem, 0);
+        bottom: 5rem;
+        left: 48rem;
+    }
+
+    .recovery {
+        box-shadow: 0px 4px 40px 0px #21209C1A;
+        border-radius: 25px;
         background-color: #E6E6E8;
-        padding: 4rem 9rem;
+        padding: 1rem 9rem 10rem 9rem;
+
+        h3 {
+            color: #5E5DBA;
+            font-family: 'Montserrat';
+            font-size: 45px;
+            font-weight: 600;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 2rem 0 0 0;
+
+            input {
+                background-color: #FFFFFF;
+                padding: 1rem;
+                width: 100%;
+                border-radius: 25px;
+                font-size: 15px;
+                border: 0.5px #FFFFFF;
+                outline: none;
+            }
+        }
+
+        p {
+            color: #23120B;
+            font-family: 'Montserrat';
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .verify-btn {
+            font-family: "Poppins";
+            font-size: 20px;
+            background-color: transparent;
+            font-weight: 700;
+            color: #5E5DBA;
+            border: 3px solid #5E5DBA;
+            background-color: #FFFFFF;
+            box-shadow: 0px 4px 20px 0px #04558F33;
+            padding: 1rem 3rem;
+            border-radius: 25px;
+            display: block;
+            margin: 1rem auto;
+        }
+    }
+}
+
+@media screen and (max-width:560px) {
+    .password-recovery {
+        margin: 0;
+        text-align: center;
+
+        p {
+            text-align: center;
+        }
+
+        .recovery {
+            padding: 3rem 2rem;
+            margin: 0 1rem;
+
+            form {
+                input {
+                    width: 95%;
+                }
+            }
+        }
     }
 }

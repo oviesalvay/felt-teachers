@@ -1,38 +1,55 @@
 @import '../../scss/mixins';
 
-.testPage{
-    .question{
+.testPage {
+    flex-wrap: wrap;
+
+    .question {
         background-color: #FFFFFF;
         padding: 1rem 2rem 18rem 2rem;
+        flex-basis: 450px;
     }
-    .test, #question, p{
-        font-size: 24px;
-        font-weight: 500;
-        font-family: 'monsterrat';
 
-        #question{
-            color:#5E5DBA;
+    .test {
+        flex-basis: 450px;
+
+        .test,
+        #question,
+        p {
+            font-size: 24px;
+            font-weight: 500;
+            font-family: 'monsterrat';
+
+            #question {
+                color: #5E5DBA;
+            }
         }
-        form{
-            input{
-                margin: .8rem .5rem;
+
+        form {
+            font-size: 24px;
+            font-family: 'monsterrat';
+            font-weight: 500;
+
+            input {
+                margin: .8rem 1rem;
             }
         }
     }
-    .next{
+
+    .next {
         @include flex-align-center;
         font-size: 24px;
         font-family: 'monsterrat';
         font-weight: 700;
         margin: 3rem 5rem;
 
-        a{
-            text-decoration: none;  
+        a {
+            text-decoration: none;
         }
-        .begin-test{
-            background-color:#5E5DBA;
-            color:#F2F2F2;
-            border:1px solid #F2F2F2;
+
+        .begin-test {
+            background-color: #5E5DBA;
+            color: #F2F2F2;
+            border: 1px solid #F2F2F2;
             border-radius: 20px;
             padding: 1rem 4rem;
             text-align: start;
@@ -40,18 +57,34 @@
             // margin: 2rem auto;
             display: block;
             font-size: 24px;
-        font-family: 'monsterrat';
-        font-weight: 700;
-            
+            font-family: 'monsterrat';
+            font-weight: 700;
+
         }
     }
 }
-@media screen and (max-width:980px){
-    .testPage{
-        display: block;
-        .question{
-            background-color: transparent;
-            margin: 2rem 0;
+
+@media screen and (max-width:980px) {
+    .testPage {
+        .signbutton {
+            display: block;
+            margin: 1rem auto;
+        }
+
+        .question {
+            padding: 3rem 1rem;
+        }
+
+        .test {
+            padding: 1rem;
+
+            p {
+                font-size: 20px;
+            }
+        }
+
+        .next {
+            margin: 2rem 3rem;
         }
     }
 }

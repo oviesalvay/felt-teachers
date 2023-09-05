@@ -4,6 +4,7 @@ import { signupSchema } from "../../schema";
 import '../registeration/login.scss';
 import circle from '../../assets/circle.png';
 import yellow from '../../assets/yellow.png';
+import { Link } from "react-router-dom";
 
 
 export const Login: FC = () => {
@@ -12,7 +13,7 @@ export const Login: FC = () => {
     const onSubmit = (values: any) => {
         console.log("Submitted", values);
     }
-    const { values, errors, touched, isSubmitting, handleBlur, handleChange, handleSubmit } = useFormik({
+    const { values, errors, touched, handleBlur, handleChange, handleSubmit } = useFormik({
         initialValues: {
             email: "",
             password: "",
@@ -23,9 +24,9 @@ export const Login: FC = () => {
     });
     return (
         <section className="login">
-            <img src={circle} alt="" className="circle"/>
-            <img src={yellow} alt="" className="yellow"/>
-            <img src={yellow} alt="" className="yellowed"/>
+            <img src={circle} alt="" className="circle" />
+            <img src={yellow} alt="" className="yellow" />
+            <img src={yellow} alt="" className="yellowed" />
             <div className="log">
                 <h2>Login</h2>
                 <div id="new">
@@ -51,7 +52,7 @@ export const Login: FC = () => {
                                 <button className="loging">Login</button>
                             </div>
                         </div>
-                        <h5>Don’t have an account? <a>Sign up</a></h5>
+                        <h5>Don’t have an account? <Link to="/signup"><a>Sign up</a></Link></h5>
                     </form>
                 }
                 {tab === 2 &&
@@ -70,7 +71,7 @@ export const Login: FC = () => {
                                 <button className="loging">Login</button>
                             </div>
                         </div>
-                        <h5>Don’t have an account? <a>Sign up</a></h5>
+                        <h5>Don’t have an account? <Link to="/sign"><a>Sign up</a></Link></h5>
                     </form>
                 }
                 {tab === 3 &&
@@ -89,11 +90,11 @@ export const Login: FC = () => {
                                 <button className="loging">Login</button>
                             </div>
                         </div>
-                        <h5>Don’t have an account? <a>Sign up</a></h5>
+                        <h5>Don’t have an account? <Link to="/signing"><a>Sign up</a></Link></h5>
                     </form>
                 }
             </div>
-        </section>
+        </section >
     )
 }
 export default Login;

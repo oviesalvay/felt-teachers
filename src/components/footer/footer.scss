@@ -4,9 +4,11 @@ footer {
     @include flexbox;
     @include padding;
     background-color: #E6E6E8;
+    flex-wrap: wrap;
 
     .logo {
         @include flex-space-between;
+        flex-basis: 300px;
     }
 
     .social-apps {
@@ -14,6 +16,7 @@ footer {
             color: #5E5DBA;
             font-family: 'Open Sans';
             font-size: 18px;
+            flex-basis: 300px;
             font-weight: 400;
         }
     }

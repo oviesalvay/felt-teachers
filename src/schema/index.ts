@@ -1,7 +1,7 @@
 import * as yup from "yup";
 
 const passwordRules = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}$/;
-// min 5 characters, 1 upper case letter, 1 lower case letter, 1 numeric digit.
+// min 5 characters, 1 "upper case letter", 1 lower case letter, 1 numeric digit.
 
 export const basicSchema = yup.object().shape({
     email: yup.string().email("Please enter a valid email").required("Required"),
@@ -9,7 +9,7 @@ export const basicSchema = yup.object().shape({
     lastName: yup.string().min(1, "Please enter your Name").required("Required"),
     phonenumber: yup.number().positive().integer().required("Required"),
     passcode: yup.number().positive().integer().required("Required"),
-
+message: yup.string().email("Please enter a message").required("Required"),
 });
 
 export const signupSchema = yup.object().shape({
@@ -29,5 +29,6 @@ export const signupSchema = yup.object().shape({
         .string()
         .oneOf([yup.ref("password")], "Passwords must match")
         .required("Required"),
+        message:yup.string().min(1, "Please enter a message").required("Required"),
 
 });

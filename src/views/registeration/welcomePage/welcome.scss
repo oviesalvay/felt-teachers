@@ -1,4 +1,5 @@
 @import '../../../scss/mixins';
+@import '../../registeration/error.scss';
 
 .welcome__intro {
     // @include padding;
@@ -38,6 +39,7 @@
         }
 
         .registered {
+            flex-wrap: wrap;
             @include flex-align-center;
             @include padding;
 
@@ -50,6 +52,7 @@
                 margin: 3rem auto;
                 border-radius: 25px;
                 text-align: center;
+                flex-basis: 300px;
 
                 >div {
                     background-color: #FFFFFF;
@@ -176,6 +179,102 @@
             bottom: 5rem;
             right: 17rem;
             z-index: -1000;
+        }
+    }
+
+    .who-we-are {
+        @include flexbox;
+        flex-wrap: wrap;
+        position: relative;
+
+        .question {
+            position: absolute;
+            left: 25rem;
+            top: 8rem;
+        }
+
+        >div,
+        figure {
+            flex-basis: 400px;
+            flex-grow: 1;
+        }
+
+        .signup {
+            font-family: 'Poppins';
+            font-size: 24px;
+            color: #5E5DBA;
+            border: 3px solid #5E5DBA;
+            box-shadow: 0px 4px 20px 0px #033E6833;
+            border-radius: 15px;
+            padding: .6rem 2rem;
+            display: block;
+            margin: 6rem auto;
+        }
+
+        .circleds {
+            position: absolute;
+            bottom: 15rem;
+            width: 5%;
+            left: 38rem;
+        }
+
+        .yellows {
+            position: absolute;
+            bottom: 15rem;
+            width: 2%;
+            left: 48rem;
+
+        }
+    }
+
+    .contact {
+        text-align: center;
+        position: relative;
+
+        #yellow-circle {
+            position: absolute;
+            width: 3%;
+            left: 4rem;
+            bottom: 15rem;
+        }
+
+        .yellow-circle {
+            position: absolute;
+            width: 3%;
+            right: 2rem;
+            top: 2rem;
+        }
+
+        form {
+            label {
+                font-family: 'Montserrat';
+                font-weight: 600;
+                font-size: 35px;
+            }
+
+            input {
+                background-color: #FFFFFF;
+                box-shadow: 0px 4px 4px 0px #21209C33 inset;
+                padding: 1rem;
+                border-radius: 23px;
+                color: #C4C4C4;
+                outline: none;
+
+                .error {
+                    text-align: center;
+                }
+            }
+        }
+
+        .signup {
+            font-family: 'Poppins';
+            font-size: 24px;
+            color: #5E5DBA;
+            border: 3px solid #5E5DBA;
+            box-shadow: 0px 4px 20px 0px #033E6833;
+            border-radius: 15px;
+            padding: .6rem 2rem;
+            margin: 4rem 0;
         }
     }
 }

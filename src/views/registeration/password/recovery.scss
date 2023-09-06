@@ -7,6 +7,17 @@
     margin: 3rem 20rem;
     position: relative;
 
+    #back {
+        color: #5E5DBA;
+        font-family: 'Montserrat';
+        font-size: 24px;
+        font-weight: 500;
+        position: absolute;
+        left: -10rem;
+        top: -3rem;
+
+    }
+
     .yellow {
         position: absolute;
         bottom: 4rem;
@@ -82,8 +93,19 @@
 
 @media screen and (max-width:560px) {
     .password-recovery {
-        margin: 0;
+        margin: 3rem 0;
         text-align: center;
+
+        #back {
+            left: 1rem;
+            top: -4rem;
+        }
+
+        .yellow,
+        .yellowed,
+        .circle {
+            display: none;
+        }
 
         p {
             text-align: center;
@@ -92,6 +114,10 @@
         .recovery {
             padding: 3rem 2rem;
             margin: 0 1rem;
+
+            h3 {
+                font-size: 20px;
+            }
 
             form {
                 input {

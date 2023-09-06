@@ -18,7 +18,7 @@ const PasswordRecovery = () => {
     });
     return (
         <section className="password-recovery">
-            <p>Back</p>
+            <p id="back">Back</p>
             <img src={yellow} alt="" className='yellowed' />
             <img src={yellow} alt="" className='yellow' />
             <img src={circle} alt="" className='circle' />

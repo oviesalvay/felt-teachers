@@ -1,0 +1,92 @@
+@import '../../../scss/mixins';
+
+.welcome__intro {
+    // @include padding;
+
+    .access-best {
+        box-shadow: 4px 4px 4px 9px #00000033;
+        padding: 1rem 3rem;
+        margin: 1rem .3rem;
+
+        .access {
+            .signup {
+                font-family: 'Poppins';
+                font-size: 24px;
+                color: #5E5DBA;
+                border: 3px solid #5E5DBA;
+                box-shadow: 0px 4px 20px 0px #033E6833;
+                border-radius: 15px;
+                padding: .6rem 2rem;
+
+            }
+        }
+    }
+
+    .register {
+        position: relative;
+
+        .yellow {
+            position: absolute;
+            left: .1rem;
+            bottom: 8rem;
+        }
+
+        .yellowed {
+            position: absolute;
+            right: 1rem;
+            top: 8rem;
+        }
+
+        .registered {
+            @include flex-align-center;
+            @include padding;
+
+            .number {
+                background-color: #FFFFFF;
+                display: flex;
+                gap: 2rem;
+                box-shadow: 0px 4px 20px 0px #21209C26;
+                padding: 4rem 5rem;
+                margin: 3rem auto;
+                border-radius: 25px;
+                text-align: center;
+
+                >div {
+                    background-color: #FFFFFF;
+                    padding: 1rem;
+                    box-shadow: 0px 4px 4px 0px #21209C33 inset;
+                    color: #5E5DBA;
+                    font-family: 'Montserrat';
+                    font-size: 100px;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .school {
+            @include padding;
+            display: flex;
+            justify-content: space-around;
+
+            p {
+                display: block;
+                margin: 0 auto;
+                font-family: 'Montserrat';
+                font-size: 30px;
+                font-weight: 700;
+                color: #5E5DBA;
+            }
+        }
+    }
+
+    .who-we-are {
+        @include padding;
+        @include flexbox;
+        flex-wrap: wrap;
+
+        >div {
+            flex-grow: 1;
+            flex-basis: 300px;
+        }
+    }
+}

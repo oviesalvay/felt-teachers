@@ -1,0 +1,20 @@
+@import '../../scss/mixins';
+
+footer {
+    @include flexbox;
+    @include padding;
+    background-color: #E6E6E8;
+
+    .logo {
+        @include flex-space-between;
+    }
+
+    .social-apps {
+        p {
+            color: #5E5DBA;
+            font-family: 'Open Sans';
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+}

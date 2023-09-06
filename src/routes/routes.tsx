@@ -14,6 +14,8 @@ import PasswordRecovery from "../views/registeration/password/passwordRecovery";
 import TeacherProfile from "../views/profile/teacherprofile";
 import ParentProfile from "../views/profile/parentprofile";
 import SchoolProfile from "../views/profile/schoolprofile";
+import Welcome from "../views/registeration/welcomePage/welcome";
+import Footer from "../components/footer/footer";
 const Views = () => {
     return (
         <>
@@ -34,6 +36,8 @@ const Views = () => {
                     <Route path="/password-recovery" element={<PasswordRecovery />} />
                     <Route path="/parentProfile" element={<ParentProfile />} />
                     <Route path="/schoolProfile" element={<SchoolProfile />} />
+                    <Route path='/welcomePage' element={<Welcome />} />
+                    <Route path="footer" element={<Footer />} />
                 </Routes>
             </BrowserRouter>
         </>

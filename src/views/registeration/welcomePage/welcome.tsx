@@ -2,7 +2,11 @@
 import '../welcomePage/welcome.scss';
 import yellow from '../../../assets/yellow.png';
 import Group from '../../../assets/Group.svg';
+import circle from '../../../assets/circle.png';
+import Vector from '../../../assets/Vector.png'
+import Vectors from '../../../assets/Vectors.png';
 import Footer from '../../../components/footer/footer';
+import phoned from '../../../assets/phoned.png';
 
 
 const Welcome = () => {
@@ -42,16 +46,36 @@ const Welcome = () => {
                     </div>
                 </div>
                 <div className='who-we-are'>
+                    <img src={circle} alt="" className='circle' />
+                    <img src={yellow} alt="" id="yellow" />
+                    <img src={circle} alt="" id='circled' />
                     <div>
                         <img src={Group} alt="" />
+                        <img src={Vector} alt="" className='vector' />
                     </div>
                     <div>
                         <h1>Who we are </h1>
                         <p>We are dedicated to providing quality education to students in line with the SDG goal -
                             We accept applications from, and examine teachers to ensure that quality
                             would be provided while teaching.</p>
+                        <button className='signup'>SIGN UP</button>
                     </div>
                 </div>
+                <div className='the-app'>
+                    <div>
+                        <h1>Get The App</h1>
+                        <p>Our mobile Application makes accessing our services even easier.
+                            Get access to the best quality of teachers via a tap from your mobile phone</p>
+                    </div>
+                    <figure>
+                        <img src={yellow} alt="" className='yelow' />
+                        <img src={Vectors} alt="" className='Vectors' />
+                        <img src={circle} alt="" className='circled' />
+                        <img src={phoned} alt="" />
+                        <img src={circle} alt="" className='circles' />
+                    </figure>
+                </div>
+                <Footer />
             </section>
         </>
     )

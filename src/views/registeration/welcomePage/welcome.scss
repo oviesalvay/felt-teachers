@@ -83,10 +83,99 @@
         @include padding;
         @include flexbox;
         flex-wrap: wrap;
+        margin: 6rem 0;
+        position: relative;
+
+        .circle {
+            position: absolute;
+            top: -1rem;
+            width: 50px;
+            left: 7rem;
+        }
+
+        #circled {
+            position: absolute;
+            top: 1rem;
+            width: 70px;
+            left: 25rem;
+        }
+
+        .vector {
+            position: absolute;
+            left: -1rem;
+            width: 25%;
+            z-index: -1000;
+            top: 1rem;
+        }
+
+        #yellow {
+            position: absolute;
+            top: 3rem;
+            width: 3%;
+            left: 19rem;
+        }
 
         >div {
             flex-grow: 1;
             flex-basis: 300px;
+        }
+
+        p {
+            line-height: 40px;
+        }
+
+        .signup {
+            font-family: 'Poppins';
+            font-size: 24px;
+            color: #5E5DBA;
+            border: 3px solid #5E5DBA;
+            box-shadow: 0px 4px 20px 0px #033E6833;
+            border-radius: 15px;
+            padding: .6rem 2rem;
+        }
+    }
+
+    .the-app {
+        @include flexbox;
+        @include padding;
+        @include padding-top;
+        flex-wrap: wrap;
+        position: relative;
+
+        >div,
+        figure {
+            flex-basis: 300px;
+            flex-grow: 1;
+        }
+
+        .circled {
+            position: absolute;
+            width: 5%;
+            // left: 1rem;
+        }
+
+        .yelow {
+            position: absolute;
+            width: 1%;
+            top: 1rem;
+            // left: .1rem;
+        }
+
+        .Vectors {
+            position: absolute;
+            right: -3rem;
+            width: 25%;
+            bottom: 1rem;
+            top: 7rem;
+            z-index: -1000;
+        }
+
+        .circles {
+            position: absolute;
+            // left: 1rem;
+            bottom: 5rem;
+            right: 17rem;
+            z-index: -1000;
         }
     }
 }

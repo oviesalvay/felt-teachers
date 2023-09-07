@@ -4,13 +4,14 @@
     @include flex-align-center;
     @include padding;
     flex-wrap: wrap;
+    flex-grow: 1;
 
     .about-me {
         background-color: #FFFFFF;
         box-shadow: 0px 4px 20px 0px #21209C33;
         padding: 0rem 3rem;
         border-radius: 25px;
-        flex-basis: 300px;
+        flex-basis: 155px;
 
         #number {
             text-align: center;

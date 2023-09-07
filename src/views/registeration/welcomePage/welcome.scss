@@ -278,3 +278,59 @@
         }
     }
 }
+
+@media screen and (max-width:1000px) {
+    .welcome__intro {
+        .register {
+            .yellow {
+                bottom: 9rem;
+            }
+
+            .yellowed {
+                top: 16rem;
+            }
+
+            .school {
+                display: block;
+                font-size: 20px;
+
+                p {
+                    margin: 1rem 0;
+                }
+            }
+
+            .registered {
+                .number {
+                    padding: 1rem 0;
+                    margin: 2rem 0;
+                }
+            }
+        }
+
+        .who-we-are {
+            .circle {
+                top: -5rem;
+            }
+        }
+
+        .the-app {
+            .circles {
+                right: 5rem;
+                width: 48%;
+                bottom: 2rem;
+            }
+        }
+
+        .contact {
+            #yellow-circle {
+                bottom: 9rem;
+            }
+
+            form {
+                input {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}

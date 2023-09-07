@@ -1,0 +1,56 @@
+@import '../../scss/mixins';
+
+.faq {
+    background-color: #E6E6E8;
+    display: flex;
+    gap: 3rem;
+    @include padding;
+    @include padding-top;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    position: relative;
+
+    >div {
+        flex-basis: 400px;
+        margin: 2rem 6rem;
+
+        p {
+            background-color: #FFFFFF;
+            border-radius: 25px;
+            box-shadow: 0px 4px 20px 0px #21209C33;
+            padding: .4rem .8rem;
+            color: #5E5DBA;
+            font-family: 'Montserrat';
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+
+    >img {
+        position: absolute;
+        width: 3%;
+        bottom: 5rem;
+        right: 4rem;
+
+    }
+}
+
+@media screen and (max-width:930px) {
+    .faq {
+        padding: 3rem 1rem;
+        gap: 1rem;
+
+        >div {
+            margin: 0;
+
+            p {
+                padding: .7rem .8rem;
+            }
+        }
+
+        >img {
+            bottom: 1rem;
+            width: 6%;
+        }
+    }
+}

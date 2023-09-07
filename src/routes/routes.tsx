@@ -16,6 +16,8 @@ import ParentProfile from "../views/profile/parentprofile";
 import SchoolProfile from "../views/profile/schoolprofile";
 import Welcome from "../views/registeration/welcomePage/welcome";
 import Footer from "../components/footer/footer";
+import Faq from "../views/FAQ/faq";
+import SchoolEdit from "../views/profile/edit/schoolProfileEdit";
 const Views = () => {
     return (
         <>
@@ -38,6 +40,10 @@ const Views = () => {
                     <Route path="/schoolProfile" element={<SchoolProfile />} />
                     <Route path='/welcomePage' element={<Welcome />} />
                     <Route path="footer" element={<Footer />} />
+
+                    <Route path="faq" element={<Faq />} />
+                    <Route path="schoolEdit" element={<SchoolEdit />} />
+
                 </Routes>
             </BrowserRouter>
         </>

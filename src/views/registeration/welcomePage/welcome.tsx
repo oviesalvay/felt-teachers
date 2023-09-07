@@ -11,6 +11,7 @@ import Vectors from '../../../assets/Vectors.png';
 import phoned from '../../../assets/phoned.png';
 import { ConnectButton } from '../../../components/button/button';
 import Register from '../../../components/register';
+import { Link } from 'react-router-dom';
 
 const Welcome = () => {
     return (
@@ -42,7 +43,8 @@ const Welcome = () => {
                         <p>We are dedicated to providing quality education to students in line with the SDG goal -
                             We accept applications from, and examine teachers to ensure that quality
                             would be provided while teaching.</p>
-                        <button className='signup'>SIGN UP</button>
+                        <Link to="/signup">
+                            <button className='signup'>SIGN UP</button></Link>
                     </div>
                 </div>
                 <div className='the-app'>
@@ -74,7 +76,8 @@ const Welcome = () => {
                     <div>
                         <h1>Have Questions?</h1>
                         <p>We have compiled a list of the questions that have been answered </p>
-                        <button className='signup'>SIGN UP</button>
+                        <Link to="/signup">
+                            <button className='signup'>SIGN UP</button></Link>
                     </div>
                 </section>
                 <Contact />

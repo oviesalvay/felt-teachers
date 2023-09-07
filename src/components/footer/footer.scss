@@ -6,17 +6,21 @@ footer {
     background-color: #E6E6E8;
     flex-wrap: wrap;
 
+
     .logo {
         @include flex-space-between;
-        flex-basis: 300px;
+        flex-basis: 280px;
+        align-items: center;
+        font-size: 15px;
     }
 
     .social-apps {
+        flex-basis: 280px;
+
         p {
             color: #5E5DBA;
             font-family: 'Open Sans';
             font-size: 18px;
-            flex-basis: 300px;
             font-weight: 400;
         }
     }

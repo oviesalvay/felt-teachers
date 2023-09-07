@@ -1,29 +1,18 @@
-import { useFormik } from 'formik';
-import { signupSchema } from "../../../schema";
 import '../welcomePage/welcome.scss';
 import yellow from '../../../assets/yellow.png';
 import Group from '../../../assets/Group.svg';
 import circle from '../../../assets/circle.png';
 import Vector from '../../../assets/Vector.png'
-import Vectors from '../../../assets/Vectors.png';
 import Footer from '../../../components/footer/footer';
-import phoned from '../../../assets/phoned.png';
-import { ConnectButton } from '../../../components/button/button';
 import Grouped from '../../../assets/Grouped.svg';
 import question from '../../../assets/question.png';
+import Contact from '../../../components/contact';
+import Vectors from '../../../assets/Vectors.png';
+import phoned from '../../../assets/phoned.png';
+import { ConnectButton } from '../../../components/button/button';
+import Register from '../../../components/register';
 
 const Welcome = () => {
-    const onSubmit = (values: any) => {
-        console.log("Submitted", values);
-    }
-    const { values, errors, touched, handleBlur, handleChange, } = useFormik({
-        initialValues: {
-            email: "",
-            message: "",
-        },
-        validationSchema: signupSchema,
-        onSubmit
-    });
     return (
         <>
             <section className="welcome__intro">
@@ -39,26 +28,7 @@ const Welcome = () => {
                     <div>
                     </div>
                 </div>
-                <div className='register'>
-                    <img src={yellow} alt="" className='yellow' />
-                    <img src={yellow} alt="" className='yellowed' />
-                    <div className='registered'>
-                        <div className='number'>
-                            <div>0</div>
-                            <div>9</div>
-                            <div>0</div>
-                        </div>
-                        <div className='number'>
-                            <div>1</div>
-                            <div>9</div>
-                            <div>0</div>
-                        </div>
-                    </div>
-                    <div className='school'>
-                        <div><p>Registered Schools</p></div>
-                        <div><p>Qualified Teachers</p></div>
-                    </div>
-                </div>
+                <Register />
                 <div className='who-we-are'>
                     <img src={circle} alt="" className='circle' />
                     <img src={yellow} alt="" id="yellow" />
@@ -107,20 +77,7 @@ const Welcome = () => {
                         <button className='signup'>SIGN UP</button>
                     </div>
                 </section>
-                <div className='contact'>
-                    <img src={yellow} alt="" id="yellow-circle" />
-                    <img src={yellow} alt="" className='yellow-circle' />
-                    <h1>Contact Us</h1>
-                    <form action="#">
-                        <label htmlFor='email' id="email"></label><br></br>
-                        <input className={errors.email && touched.email ? "input-error" : ""} type="text" id="email" onChange={handleChange} onBlur={handleBlur} value={values.email} placeholder='Email Address' />
-                        {errors.email && touched.email && <p className='error'>{errors.email}</p>}<br></br>
-                        <label htmlFor='message' id="message"></label><br></br>
-                        <input className={errors.message && touched.message ? "input-error" : ""} type="text" id="message" onChange={handleChange} onBlur={handleBlur} value={values.message} placeholder='Message' />
-                        {errors.message && touched.message && <p className='error'>{errors.message}</p>}<br></br>
-                    </form>
-                    <button className='signup'>SEND</button>
-                </div>
+                <Contact />
                 <Footer />
             </section>
         </>

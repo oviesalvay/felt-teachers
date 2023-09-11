@@ -1,6 +1,7 @@
 import email from '../../../../assets/email.png';
 import phone from '../../../../assets/phone.png';
 import location from '../../../../assets/location.png';
+import '../../../profile/edit/components/aboutEdit.scss';
 
 const AboutEdit = () => {
     return (
@@ -14,8 +15,8 @@ const AboutEdit = () => {
                         <div>
                             <p>Phone Number</p>
                         </div>
-                        <textarea></textarea>
                     </div>
+                    <textarea></textarea>
                 </div>
                 <div className='about-me'>
                     <div className='phone-number'>

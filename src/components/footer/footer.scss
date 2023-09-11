@@ -8,8 +8,10 @@ footer {
 
 
     .logo {
-        @include flex-space-between;
-        flex-basis: 280px;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-basis: 400px;
         align-items: center;
         font-size: 15px;
     }

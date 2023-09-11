@@ -1,0 +1,67 @@
+@import '../../../scss/mixins';
+
+.school-edit {
+    .teachers {
+        background-color: #C4C4C4;
+        padding: 2rem 3rem;
+
+        .edit {
+            @include flexbox;
+
+            .save-btn {
+                font-family: "Poppins";
+                font-size: 20px;
+                background-color: transparent;
+                font-weight: 700;
+                color: #5E5DBA;
+                border: 3px solid #5E5DBA;
+                box-shadow: 0px 4px 20px 0px #033E6833;
+                background-color: #FFFFFF;
+                padding: .6rem 3rem;
+                border-radius: 15px;
+            }
+        }
+
+        figure img {
+            padding-bottom: -1rem;
+            width: 15%;
+        }
+    }
+
+    .profile {
+        @include flex-align-center;
+        @include padding;
+
+        .edited {
+            h2 {
+                color: #5E5DBA;
+            }
+        }
+
+        span {
+            display: block;
+            background-color: #FDB827;
+            height: 10px;
+            width: 10px;
+            border-radius: 8rem;
+        }
+
+        h5 {
+            color: #FDB827;
+        }
+    }
+
+    .edit__school {
+        @include flex-align-center;
+        @include padding;
+    }
+
+    .more-option {
+        @include flex-align-center;
+        font-family: 'Open Sans';
+        font-size: 18px;
+        font-weight: 400;
+        color: #5E5DBA;
+        float: left;
+    }
+}

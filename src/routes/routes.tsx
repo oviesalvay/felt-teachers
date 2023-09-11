@@ -40,7 +40,6 @@ const Views = () => {
                     <Route path="/schoolProfile" element={<SchoolProfile />} />
                     <Route path='/welcomePage' element={<Welcome />} />
                     <Route path="footer" element={<Footer />} />
-
                     <Route path="faq" element={<Faq />} />
                     <Route path="schoolEdit" element={<SchoolEdit />} />
 

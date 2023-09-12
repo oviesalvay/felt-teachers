@@ -1,23 +1,31 @@
 @import '../../../../scss/mixins';
 
 
-.more-option {
+.option {
+    position: relative;
+    left: 50px;
+    // transform: translate(1rem, 5rem);
+
     button {
         color: blue;
     }
 
-    .option {
-        background-color: white;
-        box-shadow: 4px 4px 4px 0px #00000040;
-        border: 0.5px solid #5E5DBA;
-        font-family: 'Montserrat';
-        font-size: 18px;
-        font-weight: 700;
-        padding: 1rem 3rem;
-        border-radius: 25px;
+    .options {
 
-        p {
-            color: #EB5757;
+        .select-option {
+            background-color: white;
+            box-shadow: 4px 4px 4px 0px #00000040;
+            border: 0.5px solid #5E5DBA;
+            font-family: 'Montserrat';
+            font-size: 18px;
+            font-weight: 700;
+            padding: 1rem 3rem;
+            border-radius: 25px;
+            // display: none;
+
+            p {
+                color: #EB5757;
+            }
         }
     }
 }

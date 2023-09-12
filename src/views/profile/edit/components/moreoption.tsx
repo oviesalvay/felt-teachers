@@ -4,19 +4,26 @@ import '../components/moreoption.scss';
 
 
 export const MoreOption: FC = () => {
-
-    const [tab, setTab] = useState<number>(1);
+    const [isCodeVisible, setIsCodeVisible] = useState(false);
+    const toggleCodeVisibility = () => {
+        setIsCodeVisible(!isCodeVisible);
+    };
     return (
-        <section className='more-option'>
-            <div id="new">
-                <button onClick={() => setTab(1)} className={tab === 1 ? 'current' : ''}>More Option</button>
+        <section className='option'>
+            <div>
+                <button onClick={toggleCodeVisibility}>
+                    {isCodeVisible ? 'More Options' : 'More Options'}
+                </button>
             </div>
-            {tab === 1 &&
-                <div className='option'>
-                    <p>Delete Account</p>
-                    <h4>Change Password</h4>
-                    <h4>Log Out</h4>
+            {isCodeVisible && (
+                <div className='options'>
+                    <div className='select-option'>
+                        {<p>Delete Account</p>}
+                        {<h4>Change Password</h4>}
+                        {<h4>Log Out</h4>}
+                    </div>
                 </div>
+            )
             }
         </section>
 

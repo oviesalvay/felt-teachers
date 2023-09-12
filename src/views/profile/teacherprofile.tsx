@@ -9,21 +9,6 @@ import EducationalBackground from '../../components/education/educationalbackgro
 import { educationalBackground, workExperience, CV } from '../../components/data/qualification';
 
 
-// const editableText = document.getElementById('editableText');
-// const editbutton = document.getElementById('editButton');
-// let isEditing = false;
-
-// editbutton.addEventListener('click', () => {
-//     isEditing = !isEditing; // Toggle the editing state
-//     if (isEditing) {
-//         editableText.contentEditable = 'true'; // Enable text editing
-//         editButton.textContent = 'Save'; // Change button text to "Save"
-//     } else {
-//         editableText.contentEditable = 'false'; // Disable text editing
-//         editButton.textContent = 'Edit'; // Change button text back to "Edit"
-//     }
-// });
-
 const TeacherProfile = () => {
     return (
         <div className='teachers-profile'>

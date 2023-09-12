@@ -1,3 +1,4 @@
+
 export const educationalBackground: Array<object> = [
     {
        title: "EDUCATIONAL BACKGROUND"
@@ -40,7 +41,7 @@ export const workExperience: Array<object> = [
 ]
 export const CV: Array<object> =[
     {title:"CV"
-}
+},
 ]
 export const jobAdverts: Array<object> =[
     {
@@ -51,6 +52,11 @@ export const jobAdverts: Array<object> =[
         year: "Mathematics",
         school: "Private Tutor for my child",  
     }
+]
+export const Adverts: Array<object> =[
+    {
+        title:"OPEN  JOB ADVERTS (1)"
+    },
 ]
 export const requirement: Array<object> =[
     {

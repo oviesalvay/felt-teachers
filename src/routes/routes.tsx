@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "../views/home";
 import School from "../views/schools";
 import SignUp from '../views/registeration/signt'
-import Sign from '../views/registeration/signS';
+import SignS from '../views/registeration/signS';
 import Signing from '../views/registeration/signp';
 import Login from "../views/registeration/login";
 import Navbar from "../components/navbar/navbar";
@@ -17,7 +17,10 @@ import SchoolProfile from "../views/profile/schoolprofile";
 import Welcome from "../views/registeration/welcomePage/welcome";
 import Footer from "../components/footer/footer";
 import Faq from "../views/FAQ/faq";
-import SchoolEdit from "../views/profile/edit/schoolProfileEdit";
+import SchoolEdit from "../views/profile/edit/schoolEdit";
+import ParentEdit from "../views/profile/edit/parentEdit";
+// import TeacherEdit from "../views/profile/edit/teacherEdit";
+import Sign from "../views/registeration/sign";
 const Views = () => {
     return (
         <>
@@ -28,7 +31,7 @@ const Views = () => {
                     <Route path="school" element={<School />} />
                     <Route path="help" element={<TeacherProfile />} />
                     <Route path="/signup" element={<SignUp />} />
-                    <Route path="/sign" element={<Sign />} />
+                    <Route path="/signS" element={<SignS />} />
                     <Route path="/signing" element={<Signing />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/testPage" element={<TestPage />} />
@@ -42,6 +45,9 @@ const Views = () => {
                     <Route path="footer" element={<Footer />} />
                     <Route path="faq" element={<Faq />} />
                     <Route path="schoolEdit" element={<SchoolEdit />} />
+                    <Route path="parentEdit" element={<ParentEdit />} />
+                    {/* <Route path="teacherEdit" element={<TeacherEdit />} /> */}
+                    <Route path="join" element={<Sign />} />
 
                 </Routes>
             </BrowserRouter>

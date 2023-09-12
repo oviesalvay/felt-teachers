@@ -5,7 +5,7 @@ import eclipse from "./assest/eclipse.png";
 import { Link } from 'react-router-dom';
 
 
-const Sign = () => {
+const SignS = () => {
     const onSubmit = (values: any) => {
         console.log("Submitted", values);
     }
@@ -65,4 +65,4 @@ const Sign = () => {
         </>
     )
 }
-export default Sign
+export default SignS

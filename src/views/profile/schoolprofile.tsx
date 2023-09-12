@@ -7,16 +7,19 @@ import Experience from "../../components/experiences/experience";
 import EducationalBackground from "../../components/education/educationalbackground";
 import { jobAdverts, requirement } from "../../components/data/qualification";
 import '../../styles/teacher.scss';
+import { Link } from "react-router-dom";
 
 const SchoolProfile = () => {
     return (
         <>
             <div className='teachers-profile'>
                 <div className="teachers">
-                    <div className='edit'>
-                        <img src={editPen} alt="" />
-                        <button className='edit-btn'>EDIT</button>
-                    </div>
+                    <Link to="/schoolEdit">
+                        <div className='edit'>
+                            <img src={editPen} alt="" />
+                            <button className='edit-btn'>EDIT</button>
+                        </div>
+                    </Link>
                     <figure>
                         <img src={james} alt="" className='Ellipse' />
                     </figure>

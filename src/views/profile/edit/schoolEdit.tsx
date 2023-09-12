@@ -2,11 +2,9 @@ import editPen from '../../../assets/editPen.png';
 import Ellips from '../../../assets/Ellips.png';
 import AboutEdit from './components/aboutEdit';
 import '../edit/profileEdit.scss';
-import EducationalBackground from './../../../components/education/educationalbackground';
+import EducationalBackground from '../../../components/education/educationalbackground';
 import { jobAdverts, requirement } from '../../../components/data/qualification';
-// import Group from '../../../assets/Group 377.png';
-// import '../edit/components/moreoption';
-import MoreOption from '../edit/components/moreoption';
+import MoreOption from './components/moreoption';
 
 const SchoolEdit = () => {
     return (
@@ -50,14 +48,6 @@ const SchoolEdit = () => {
                 <AboutEdit />
                 <EducationalBackground data={jobAdverts} />
                 <EducationalBackground data={requirement} />
-                {/* <div className='more-option'>
-                    <div>
-                    {/* <img src={Group} alt="" /> */}
-                {/* </div>
-                    <div>
-                    <h5>More Options</h5>
-                    </div>
-                </div> */}
                 <MoreOption />
             </section>
         </>

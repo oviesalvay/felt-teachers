@@ -1,0 +1,16 @@
+@import '../../../../scss/mixins';
+
+.delete {
+    background-color: red;
+
+    h5 {
+        font-family: 'Montserrat';
+        font-size: 36px;
+        font-weight: 700;
+        color: #23120B;
+    }
+
+    .delete-button {
+        display: flex;
+    }
+}

@@ -1,0 +1,31 @@
+@import '../../scss/mixins';
+
+.join-intro {
+    // display: block;
+    @include padding-top;
+
+    .join {
+        border-radius: 25px;
+        @include padding;
+        margin: 2rem 10rem;
+        box-shadow: 0px 4px 40px 0px #21209C1A;
+        background-color: #E6E6E8;
+        @include flexbox;
+
+    }
+
+    p {
+        color: #5E5DBA;
+    }
+
+    .community {
+        text-align: center;
+
+        h4 {
+            color: #5E5DBA;
+            font-size: 20px;
+            font-weight: 700px;
+            font-family: 'Montserrat';
+        }
+    }
+}

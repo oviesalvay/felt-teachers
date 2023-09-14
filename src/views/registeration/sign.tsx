@@ -1,5 +1,5 @@
 import group from '../../assets/group.png';
-import { Buttoned } from "../../components/button/button";
+import { LinkButton } from "../../components/button/button";
 import '../registeration/sign.scss';
 import { Link } from 'react-router-dom';
 import yellow from '../../assets/yellow.png';
@@ -19,15 +19,17 @@ const Sign = () => {
                         <img src={group} alt="" />
                     </div>
                     <div className='community'>
-                        <h4>Join the Felt Teachers community<br></br>
+                        <h4>Join the Felt Teachers community
                             Today</h4>
                         <p>Which Category Do You Belong</p>
-                        <Link to="/signUp">
-                            <Buttoned type="none" content="Teacher" /></Link>
-                        <Link to="/signS">
-                            <Buttoned type="none" content="School" /></Link>
-                        <Link to="/signing">
-                            <Buttoned type="none" content="Parent" /></Link>
+                        <div>
+                            <Link to="/signUp">
+                                <LinkButton type="none" content="Teacher" /></Link>
+                            <Link to="/signS">
+                                <LinkButton type="none" content="School" /></Link>
+                            <Link to="/signing">
+                                <LinkButton type="none" content="Parent" /></Link>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -34,3 +34,9 @@ export const SignButton: FC<linkAttributes> = ({ content, onClick, id, }) => {
         </button>
     )
 }
+export const LinkButton: FC<linkAttributes> = ({ content, onClick, id, }) => {
+    return (
+        <button className="LinkButton" id={id} onClick={onClick}>{content}
+        </button>
+    )
+}

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import group from '../../assets/group.png';
-import { Buttoned } from "../../components/button/button";
+import { LinkButton } from "../../components/button/button";
 import yellow from '../../assets/yellow.png';
 import circle from '../../assets/circle.png';
 import circled from '../../assets/circled.png'
@@ -22,11 +22,11 @@ const Log = () => {
                         <h4>   Log In To Your Account</h4>
                         <p>Which Category Do You Belong</p>
                         <Link to="/signUp">
-                            <Buttoned type="none" content="Teacher" /></Link>
+                            <LinkButton type="none" content="Teacher" /></Link>
                         <Link to="/signS">
-                            <Buttoned type="none" content="School" /></Link>
+                            <LinkButton type="none" content="School" /></Link>
                         <Link to="/signing">
-                            <Buttoned type="none" content="Parent" /></Link>
+                            <LinkButton type="none" content="Parent" /></Link>
 
                     </div>
                 </div>

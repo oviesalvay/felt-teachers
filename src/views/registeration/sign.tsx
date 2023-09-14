@@ -13,6 +13,8 @@ const Sign = () => {
                 <p>Back to Home</p>
                 <img src={yellow} alt="" className='yellowcircle' />
                 <img src={circle} alt="" className='Circle' />
+                <img src={yellow} alt="" className='yellowdot' />
+                <img src={yellow} alt="" className='Yellow' />
                 <img src={circled} alt="" className='Circled' />
                 <div className='join'>
                     <div>
@@ -22,14 +24,14 @@ const Sign = () => {
                         <h4>Join the Felt Teachers community
                             Today</h4>
                         <p>Which Category Do You Belong</p>
-                        <div>
-                            <Link to="/signUp">
-                                <LinkButton type="none" content="Teacher" /></Link>
-                            <Link to="/signS">
-                                <LinkButton type="none" content="School" /></Link>
-                            <Link to="/signing">
-                                <LinkButton type="none" content="Parent" /></Link>
-                        </div>
+                        {/* <div> */}
+                        <Link to="/signUp">
+                            <LinkButton type="none" content="Teacher" /></Link>
+                        <Link to="/signS">
+                            <LinkButton type="none" content="School" /></Link>
+                        <Link to="/signing">
+                            <LinkButton type="none" content="Parent" /></Link>
+                        {/* </div> */}
                     </div>
                 </div>
             </section>

@@ -22,6 +22,7 @@ import ParentEdit from "../views/profile/edit/parentEdit";
 // import TeacherEdit from "../views/profile/edit/teacherEdit";
 import Sign from "../views/registeration/sign";
 import Log from "../views/registeration/log";
+import PasswordReset from "../views/registeration/password/passwordReset";
 const Views = () => {
     return (
         <>
@@ -40,6 +41,7 @@ const Views = () => {
                     <Route path="/test2" element={<Test2 />} />
                     <Route path="/submitTest" element={<SubmitTest />} />
                     <Route path="/password-recovery" element={<PasswordRecovery />} />
+                    <Route path="/passwordReset" element={<PasswordReset />} />
                     <Route path="/parentProfile" element={<ParentProfile />} />
                     <Route path="/schoolProfile" element={<SchoolProfile />} />
                     <Route path='/welcomePage' element={<Welcome />} />

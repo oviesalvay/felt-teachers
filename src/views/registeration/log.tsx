@@ -11,6 +11,8 @@ const Log = () => {
             <section className='join-intro'>
                 <img src={yellow} alt="" className='yellowcircle' />
                 <img src={circle} alt="" className='Circle' />
+                <img src={yellow} alt="" className='yellowdot' />
+                <img src={yellow} alt="" className='Yellow' />
                 <img src={circled} alt="" className='Circled' />
                 <p>Back to Home</p>
                 <div className='join'>
@@ -27,7 +29,6 @@ const Log = () => {
                             <LinkButton type="none" content="School" /></Link>
                         <Link to="/signing">
                             <LinkButton type="none" content="Parent" /></Link>
-
                     </div>
                 </div>
             </section >

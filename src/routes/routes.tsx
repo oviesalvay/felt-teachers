@@ -21,6 +21,7 @@ import SchoolEdit from "../views/profile/edit/schoolEdit";
 import ParentEdit from "../views/profile/edit/parentEdit";
 // import TeacherEdit from "../views/profile/edit/teacherEdit";
 import Sign from "../views/registeration/sign";
+import Log from "../views/registeration/log";
 const Views = () => {
     return (
         <>
@@ -48,7 +49,7 @@ const Views = () => {
                     <Route path="parentEdit" element={<ParentEdit />} />
                     {/* <Route path="teacherEdit" element={<TeacherEdit />} /> */}
                     <Route path="join" element={<Sign />} />
-
+                    <Route path="log" element={<Log />} />
                 </Routes>
             </BrowserRouter>
         </>

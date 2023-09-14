@@ -43,25 +43,14 @@ export const CV: Array<object> =[
     {title:"CV"
 },
 ]
-export const jobAdverts: Array<object> =[
-    {
-        title:"OPEN  JOB ADVERTS (1)"
-    },
+export const jobAdverts: Array<object> = [
     {
         degree: "SS3",
         year: "Mathematics",
         school: "Private Tutor for my child",  
     }
 ]
-export const Adverts: Array<object> =[
-    {
-        title:"OPEN  JOB ADVERTS (1)"
-    },
-]
 export const requirement: Array<object> =[
-    {
-title:"REQUIREMENTS"
-    },
     {
         degree:"We need someone with at lease a B.Sc in Sciences to teach Mathematics . 2+years of experience is an advantage"   
     },

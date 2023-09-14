@@ -4,9 +4,10 @@ import "./index.scss";
 
 interface experience {
     data: Array<object>
+    title?: string
 }
 
-const EducationalBackground: FC<experience> = ({ data }) => {
+const EducationalBackground: FC<experience> = ({ data, title }) => {
 
 
     const [showQualification, setShowQualification] = useState<boolean>(false)
@@ -16,28 +17,24 @@ const EducationalBackground: FC<experience> = ({ data }) => {
             <div className='education'>
                 <span className="toggler"></span>
                 <div onClick={() => setShowQualification(!showQualification)} className="feild__toggler">
-                    {data.map((qualifications: any, index: number) => {
-                        return (
-                            <h3 key={index}>{qualifications.title}</h3>
-                        )
-                    })}
+                    <h3>{title}</h3>
                     <img className={showQualification ? "rotate" : ""} src={arrow} alt="" />
                 </div>
-                <div>
-                    {data.map((qualifications: any, index: number) => {
-                        return (
-                            <>
-                                {showQualification &&
+                {showQualification &&
+                    <>
+                        {data.map((qualifications: any, index: number) => {
+                            return (
+                                <>
                                     <div key={index} className='education__background'>
-                                        <p>{qualifications.degree}</p>
-                                        <p >{qualifications.year}</p >
-                                        <p>{qualifications.school}</p>
+                                        {qualifications.degree && <p>{qualifications.degree}</p>}
+                                        {qualifications.year && <p >{qualifications.year}</p>}
+                                        {qualifications.school && <p>{qualifications.school}</p>}
                                     </div>
-                                }
-                            </>
-                        )
-                    })}
-                </div>
+                                </>
+                            )
+                        })}
+                    </>
+                }
             </div>
 
         </>

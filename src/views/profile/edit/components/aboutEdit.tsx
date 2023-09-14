@@ -1,47 +1,44 @@
-import email from '../../../../assets/email.png';
-import phone from '../../../../assets/phone.png';
-import location from '../../../../assets/location.png';
-import '../../../profile/edit/components/aboutEdit.scss';
+// import email from '../../../../assets/email.png';
+// import phone from '../../../../assets/phone.png';
+// import location from '../../../../assets/location.png';
+// import connect from '../../../../assets/connect.png';
 
-const AboutEdit = () => {
-    return (
-        <>
-            <div className='about'>
-                <div className='about-me'>
-                    <div className='phone-number'>
-                        <div>
-                            <img src={phone} alt="" />
-                        </div>
-                        <div>
-                            <p>Phone Number</p>
-                        </div>
-                    </div>
-                    <textarea></textarea>
-                </div>
-                <div className='about-me'>
-                    <div className='phone-number'>
-                        <div>
-                            <img src={email} alt="" />
-                        </div>
-                        <div>
-                            <p>Email Address</p>
-                        </div>
-                    </div>
-                    <textarea></textarea>
-                </div>
-                <div className='about-me'>
-                    <div className='phone-number'>
-                        <div>
-                            <img src={location} alt="" />
-                        </div>
-                        <div>
-                            <p>Location</p>
-                        </div>
-                    </div>
-                    <textarea></textarea>
-                </div>
-            </div>
-        </>
-    )
-}
-export default AboutEdit;
+
+
+
+// const edit: Array<object> = [
+//     {
+//         img: phone,
+//         text: 'Phone Number'
+//     },
+//     {
+//         img: email,
+//         text: 'Email Address'
+//     },
+//     {
+//         img: location,
+//         name: 'Location'
+//     },
+//     {
+//         img: connect,
+//         name: 'Connects'
+//     },
+// ]
+// const AboutEdit = () => {
+//     return (
+//         <>
+//             {edit.map((edit: any, index: number) => {
+//                 return (
+//                     <>
+//                         <div key={index} className='education__background'>
+//                             <p>{edit.name}</p>
+//                             <p >{edit.year}</p>
+//                             <p>{edit.school}</p>
+//                         </div>
+//                     </>
+//                 )
+//             })}
+//         </>
+//     )
+// }
+// export default AboutEdit;

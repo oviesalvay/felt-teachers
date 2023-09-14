@@ -1,7 +1,8 @@
 @import '../../scss/mixins';
 
 .education {
-    @include padding;
+    border-top: 1px solid #C4C4C4;
+
     color: #23120B;
     font-family: 'Montserrat';
     font-size: 16px;
@@ -9,16 +10,16 @@
 
     .toggler {
         display: block;
-        background-color: #C4C4C4;
         width: 100%;
         height: 1px;
     }
 
     .feild__toggler {
+        @include padding;
         display: flex;
         align-items: center;
         justify-content: space-between;
-
+        border-bottom: 1px solid #C4C4C4;
 
         img {
             rotate: 180deg;

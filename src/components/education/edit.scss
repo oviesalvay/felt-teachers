@@ -1,7 +1,28 @@
+@import '../../scss/mixins';
+
 .education-edit {
+    .feild__toggler {
+        @include flexbox;
+
+        img {
+
+            rotate: 180deg;
+            transition: all .3s ease;
+        }
+
+        .rotate {
+            rotate: 0deg;
+            transition: all ease .3s ease-in-out;
+        }
+    }
+
     .Education {
+
         input {
-            background-color: blue;
+            background-color: #FFFFFF;
+            border: 0.5px solid #5E5DBA;
+            border-radius: 25px;
+            padding: 1rem;
         }
     }
 }

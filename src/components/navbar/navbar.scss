@@ -82,22 +82,21 @@ header {
                 align-items: flex-start;
                 top: 100%;
                 right: -0;
-                // opacity: 0;
-                pointer-events: none;
                 transition: all ease .4s;
+                pointer-events: none;
+                opacity: 0;
 
                 .active {
-                    display: flex;
-                    color: #000000;
+                    // color: #000000;
                     transition: all ease-in-out 4s;
 
                 }
             }
 
             .navlinks__close {
-                right: 0;
                 pointer-events: all;
                 opacity: 0;
+                right: 0;
             }
 
         }

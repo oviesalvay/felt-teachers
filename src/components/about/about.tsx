@@ -34,13 +34,11 @@ const About = () => {
                     return (
                         <div className='about-intro'>
                             <div key={index} className='about'>
-                                {/* <div> */}
                                 <div>
                                     <img src={about.img} />
                                     <p>{about.name}</p>
                                 </div>
                                 <p>{about.text}</p>
-                                {/* </div> */}
                             </div>
                         </div>
                     )

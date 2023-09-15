@@ -1,6 +1,6 @@
 import editPen from '../../../assets/editPen.png';
 import Ellips from '../../../assets/Ellips.png';
-import AboutEdit from './components/aboutEdit';
+import AboutEdit from '../edit/components/aboutEdit';
 import '../edit/profileEdit.scss';
 import EducationalBackground from '../../../components/education/educationalbackground';
 import { jobAdverts, requirement } from '../../../components/data/qualification';

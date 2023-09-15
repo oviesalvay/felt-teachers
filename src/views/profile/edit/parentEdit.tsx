@@ -1,6 +1,9 @@
 import editPen from '../../../assets/editPen.png';
 import Ellips from '../../../assets/Ellips.png';
+import About from '../../../components/about/about';
+// import AboutEdit from '../edit/components/aboutEdit';
 // import { formElements } from '../../../components/data/qualificationEdit';
+import EducationalBackgroundEdit from '../../../components/education/educationalbackgroundEdit';
 
 const ParentEdit = () => {
     return (
@@ -33,6 +36,9 @@ const ParentEdit = () => {
                         <h5>Not Approved</h5>
                     </div>
                 </div>
+                <About />
+                {/* <AboutEdit /> */}
+                <EducationalBackgroundEdit />
             </section>
         </>
     )

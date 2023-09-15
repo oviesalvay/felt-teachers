@@ -35,12 +35,20 @@
                 font-size: 1rem;
                 outline: none;
                 margin: 1rem 0;
-
             }
         }
+    }
+}
 
+@media screen and (max-width:980px) {
+    .edit-about {
+        display: block;
 
-
-
+        .about-me {
+            .About {
+                margin: 1rem 2rem;
+                padding: 1rem;
+            }
+        }
     }
 }

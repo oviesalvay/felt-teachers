@@ -2,7 +2,7 @@ import confidence from '../../../assets/confidence.svg';
 // import yellow from '../../../assets/yellow.png';
 import editPen from '../../../assets/editPen.png';
 import EditAbout from './components/editAbout';
-import EducationalBackgroundEdit from '../../../components/education/educationalbackgroundEdit';
+import ExperienceEdit from '../../../components/experience/experienceEdit';
 
 
 const TeacherEdit = () => {
@@ -23,17 +23,21 @@ const TeacherEdit = () => {
                     </figure>
                 </div>
                 <div className='profile'>
-                    <div>
-                        <img src={editPen} alt="" />
+                    <div className='profile-content'>
+                        <div>
+                            <img src={editPen} alt="" />
+                        </div>
+                        <div className='edited'>
+                            <h2>ALPHA READY SECONDARY SCHOOL</h2>
+                        </div>
                     </div>
-                    <div className='edited'>
-                        <h2>ALPHA READY SECONDARY SCHOOL</h2>
-                    </div>
-                    <div className='green'>
-                        <span></span>
-                    </div>
-                    <div className='green'>
-                        <h5>Not Approved</h5>
+                    <div className='profile-content'>
+                        <div className='green'>
+                            <span></span>
+                        </div>
+                        <div className='green'>
+                            <h5>Not Approved</h5>
+                        </div>
                     </div>
                 </div>
                 <div className='edit__school'>
@@ -45,7 +49,7 @@ const TeacherEdit = () => {
                             education with the aid of amazing teachers and staff</p></div>
                 </div>
                 <EditAbout />
-                <EducationalBackgroundEdit />
+                <ExperienceEdit />
             </div>
         </>
     )

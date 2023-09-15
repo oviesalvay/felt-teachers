@@ -21,7 +21,7 @@ const Faq = () => {
                 <p>What is the maximum connect point i can buy</p>
                 <p>How can i delete my account</p>
             </div>
-            <img src={yellow} alt="" />
+            <img src={yellow} alt="" className='yellow-dot'/>
         </section>
     )
 }

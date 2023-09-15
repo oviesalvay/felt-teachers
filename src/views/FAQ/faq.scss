@@ -3,18 +3,18 @@
 .faq {
     background-color: #E6E6E8;
     display: flex;
-    gap: 3rem;
-    @include padding;
+    gap: 5rem;
     @include padding-top;
     flex-wrap: wrap;
     flex-grow: 1;
     position: relative;
+    @include padding;
 
     >div {
         flex-basis: 400px;
-        margin: 2rem 6rem;
 
         p {
+            margin: 2rem 0;
             background-color: #FFFFFF;
             border-radius: 25px;
             box-shadow: 0px 4px 20px 0px #21209C33;
@@ -26,7 +26,7 @@
         }
     }
 
-    >img {
+    .yellow-dot {
         position: absolute;
         width: 3%;
         bottom: 5rem;

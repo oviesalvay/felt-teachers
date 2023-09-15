@@ -1,6 +1,9 @@
 @import '../../../scss/mixins';
 
 .school-edit {
+    background-color: #E6E6E8;
+    // @include padding;
+
     .teachers {
         background-color: #C4C4C4;
         padding: 2rem 3rem;
@@ -33,6 +36,11 @@
         @include padding;
         margin: 2rem 0;
 
+        .profile-content {
+            display: contents;
+            align-items: center;
+        }
+
         .edited {
             h2 {
                 color: #5E5DBA;
@@ -64,5 +72,42 @@
         font-weight: 400;
         color: #5E5DBA;
         float: left;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .school-edit {
+        .teachers {
+            figure img {
+                width: 50%;
+                transform: translate(-2rem, 4.5rem);
+            }
+        }
+
+        .profile {
+            display: block;
+
+            h5 {
+                font-size: 21px;
+                padding: .6rem;
+            }
+
+            .profile-content {
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+            }
+
+            .edited {
+
+                h2 {
+                    font-size: 17px;
+                }
+            }
+        }
+
+        .edit__school {
+            align-items: flex-start;
+        }
     }
 }

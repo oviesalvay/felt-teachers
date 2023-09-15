@@ -24,17 +24,21 @@ const SchoolEdit = () => {
                     </figure>
                 </div>
                 <div className='profile'>
-                    <div>
-                        <img src={editPen} alt="" />
+                    <div className='profile-content'>
+                        <div>
+                            <img src={editPen} alt="" />
+                        </div>
+                        <div className='edited'>
+                            <h2>ALPHA READY SECONDARY SCHOOL</h2>
+                        </div>
                     </div>
-                    <div className='edited'>
-                        <h2>ALPHA READY SECONDARY SCHOOL</h2>
-                    </div>
-                    <div>
-                        <span></span>
-                    </div>
-                    <div>
-                        <h5>Not Approved</h5>
+                    <div className='profile-content'>
+                        <div>
+                            <span></span>
+                        </div>
+                        <div>
+                            <h5>Not Approved</h5>
+                        </div>
                     </div>
                 </div>
                 <div className='edit__school'>

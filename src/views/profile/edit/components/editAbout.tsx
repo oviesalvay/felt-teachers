@@ -35,8 +35,6 @@ const EditAbout = () => {
                                         <img src={edit.img} />
                                         <p>{edit.text}</p>
                                     </div>
-                                    {/* <div>
-                                    </div> */}
                                     <input type="text" />
                                 </form>
                             </div>

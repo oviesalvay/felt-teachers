@@ -1,0 +1,33 @@
+@import '../../scss/mixins';
+
+.education-edit {
+
+    .course,
+    .education-content {
+        >input {
+            background-color: #FFFFFF;
+            border-radius: 25px;
+            padding: 1rem;
+            border: 0.5px solid #5E5DBA;
+            outline: none;
+            flex-grow: 1;
+            margin: 2rem 0;
+        }
+
+        ::placeholder {
+            font-family: 'Montserrat';
+            font-size: 20px;
+            font-weight: 500;
+            color: #C4C4C4;
+        }
+
+        .Education-words {
+            .education-content {
+                display: flex;
+                gap: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:980px) {}

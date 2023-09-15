@@ -11,9 +11,9 @@ const ParentEdit = () => {
             <section className='school-edit'>
                 <div className="teachers">
                     <div className='edit'>
-                        {/* <div>
+                        <div>
                             <img src={editPen} alt="" />
-                        </div> */}
+                        </div>
                         <div>
                             <button className='save-btn'>SAVE</button>
                         </div>
@@ -23,17 +23,21 @@ const ParentEdit = () => {
                     </figure>
                 </div>
                 <div className='profile'>
-                    <div>
-                        <img src={editPen} alt="" />
+                    <div className='profile-content'>
+                        <div>
+                            <img src={editPen} alt="" />
+                        </div>
+                        <div className='edited'>
+                            <h2>ADEBAYO JAMES</h2>
+                        </div>
                     </div>
-                    <div className='edited'>
-                        <h2>ADEBAYO JAMES</h2>
-                    </div>
-                    <div>
-                        <span></span>
-                    </div>
-                    <div>
-                        <h5>Not Approved</h5>
+                    <div className='profile-content'>
+                        <div>
+                            <span></span>
+                        </div>
+                        <div>
+                            <h5>Not Approved</h5>
+                        </div>
                     </div>
                 </div>
                 <EditAbout />

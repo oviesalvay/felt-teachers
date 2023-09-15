@@ -1,4 +1,4 @@
-// import midi_search from '../assets/mdi_search.png';
+
 import '../components/search.scss';
 
 const Search = () => {
@@ -6,7 +6,9 @@ const Search = () => {
         <>
             <div className='search'>
                 <form>
-                    <input type="search" placeholder="Search" />
+                    <div>
+                        <input type="search" placeholder="Search" />
+                    </div>
                 </form>
             </div>
         </>

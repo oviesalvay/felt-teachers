@@ -4,13 +4,15 @@ import '../registeration/sign.scss';
 import { Link } from 'react-router-dom';
 import yellow from '../../assets/yellow.png';
 import circle from '../../assets/circle.png';
-import circled from '../../assets/circled.png'
+import circled from '../../assets/circled.png';
 
 const Sign = () => {
     return (
         <>
             <section className='join-intro'>
-                <p>Back to Home</p>
+                <Link to="/">
+                    <p>Back to Home</p>
+                </Link>
                 <img src={yellow} alt="" className='yellowcircle' />
                 <img src={circle} alt="" className='Circle' />
                 <img src={yellow} alt="" className='yellowdot' />

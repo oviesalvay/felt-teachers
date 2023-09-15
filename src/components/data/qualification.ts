@@ -39,10 +39,6 @@ export const workExperience: Array<object> = [
         school: "Geoscience, University of Ibadan"
     },
 ]
-export const CV: Array<object> =[
-    {title:"CV"
-},
-]
 export const jobAdverts: Array<object> = [
     {
         degree: "SS3",

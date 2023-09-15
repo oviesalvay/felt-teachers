@@ -2,27 +2,38 @@
 
 
 .search {
+    // display: flex;
+    // align-items: center;
+
     form {
-        padding: 0;
+        // padding: 0;
+        display: flex;
+        gap: 3rem;
+        align-items: center;
 
         input {
+            background: #FFFFFF;
             border-radius: 30px;
             width: 740px;
-            background: #FFFFFF;
             border: transparent;
-            display: block;
+            display: flex;
+            align-items: center;
             margin: 3rem 2rem 0rem 0;
             padding: 15px 4px 9px 40px;
             outline: none;
             background-image: url('../assets/mdi_search.png');
             background-repeat: no-repeat;
+            background-position: 1% 100%;
+
         }
 
-        input[type="search"] {
+        ::placeholder {
             color: #AEAEAE;
-            font-size: 15px;
+            font-size: 20px;
             font-family: 'monsterrat';
             font-weight: 600;
+            margin: 0 3rem;
+            padding: 0 2rem;
         }
     }
 }
@@ -31,7 +42,7 @@
     .search {
         form {
             input {
-                width: 350px;
+                width: 300px;
             }
 
         }

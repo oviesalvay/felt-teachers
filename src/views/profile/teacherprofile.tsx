@@ -5,8 +5,9 @@ import yellow from '../../assets/yellow.png';
 import About from '../../components/about/about';
 import editPen from '../../assets/editPen.png';
 import EducationalBackground from '../../components/education/educationalbackground';
-import { educationalBackground, workExperience, CV } from '../../components/data/qualification';
+import { educationalBackground, workExperience, } from '../../components/data/qualification';
 import { useNavigate } from "react-router-dom";
+import Cv from '../../components/cv';
 
 const TeacherProfile = () => {
     const navigate = useNavigate()
@@ -22,7 +23,7 @@ const TeacherProfile = () => {
                 </figure>
             </div>
             <div className='profile'>
-                <h2>CENTURION CONFIDENCE ETAH</h2>
+                <h1>CENTURION CONFIDENCE ETAH</h1>
                 <div className='name'>
                     <div className='approved'>
                         <div>
@@ -43,7 +44,7 @@ const TeacherProfile = () => {
             <About />
             <EducationalBackground title="OPEN  JOB ADVERTS (1)" data={educationalBackground} />
             <EducationalBackground title="REQUIREMENTS" data={workExperience} />
-            <EducationalBackground title="CV" data={CV} />
+            <Cv />
         </div>
         // </div>
     )

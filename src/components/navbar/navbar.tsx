@@ -27,7 +27,7 @@ export const Navbar: FC = () => {
                 <div className={shownav ? "navlinks navlinks__close" : "navlinks"}>
                     <NavLink onClick={handleClick} className={({ isActive }) => (isActive ? "active" : "")} to="/" id='navlink'>Home</NavLink>
                     <NavLink onClick={handleClick} to="/faq">FAQ(s)</NavLink>
-                    <Link to="/signup">
+                    <Link to="/join">
                         <button className='signup'>SIGN UP</button></Link>
                 </div>
                 <div onClick={handleClick} className='hamburger'>

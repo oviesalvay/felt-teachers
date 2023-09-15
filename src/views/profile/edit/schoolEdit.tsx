@@ -46,8 +46,8 @@ const SchoolEdit = () => {
                             education with the aid of amazing teachers and staff</p></div>
                 </div>
                 <EditAbout />
-                <EducationalBackground data={jobAdverts} />
-                <EducationalBackground data={requirement} />
+                <EducationalBackground title="OPEN  JOB ADVERTS (1)" data={jobAdverts} />
+                <EducationalBackground title="REQUIREMENTS" data={requirement} />
                 <MoreOption />
             </section>
         </>

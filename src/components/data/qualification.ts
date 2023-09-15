@@ -52,6 +52,6 @@ export const jobAdverts: Array<object> = [
 ]
 export const requirement: Array<object> =[
     {
-        degree:"We need someone with at lease a B.Sc in Sciences to teach Mathematics . 2+years of experience is an advantage"   
+        text:"We need someone with at lease a B.Sc in Sciences to teach Mathematics . 2+years of experience is an advantage"   
     },
 ]

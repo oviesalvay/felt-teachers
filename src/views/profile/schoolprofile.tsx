@@ -42,8 +42,8 @@ const SchoolProfile = () => {
                 </div>
                 <p id="school">Alpha ready secondary school is a school dedicated to providing quality education with the aid of amazing teachers and staff</p>
                 <About />
-                <EducationalBackground data={jobAdverts} />
-                <EducationalBackground data={requirement} />
+                <EducationalBackground title="OPEN  JOB ADVERTS (1)" data={jobAdverts} />
+                <EducationalBackground title="REQUIREMENTS" data={requirement} />
             </div>
         </>
     )

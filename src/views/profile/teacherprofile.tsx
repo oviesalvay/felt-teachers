@@ -6,14 +6,14 @@ import About from '../../components/about/about';
 import editPen from '../../assets/editPen.png';
 import EducationalBackground from '../../components/education/educationalbackground';
 import { educationalBackground, workExperience, CV } from '../../components/data/qualification';
-
+import { useNavigate } from "react-router-dom";
 
 const TeacherProfile = () => {
+    const navigate = useNavigate()
     return (
         <div className='teachers-profile'>
-            {/* <div className='profile-intro'> */}
             <div className="teachers">
-                <div className='edit'>
+                <div className='edit' onClick={() => navigate("/parentEdit")}>
                     <img src={editPen} alt="" />
                     <button className='edit-btn'>EDIT</button>
                 </div>
@@ -41,9 +41,9 @@ const TeacherProfile = () => {
             <p id='school'>I am a secondary school teacher with 5 years of
                 experience in working with teenagers between the ages 10-18</p>
             <About />
-            <EducationalBackground data={educationalBackground} />
-            <EducationalBackground data={workExperience} />
-            <EducationalBackground data={CV} />
+            <EducationalBackground title="OPEN  JOB ADVERTS (1)" data={educationalBackground} />
+            <EducationalBackground title="REQUIREMENTS" data={workExperience} />
+            <EducationalBackground title="CV" data={CV} />
         </div>
         // </div>
     )

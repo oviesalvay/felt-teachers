@@ -19,7 +19,7 @@ import Footer from "../components/footer/footer";
 import Faq from "../views/FAQ/faq";
 import SchoolEdit from "../views/profile/edit/schoolEdit";
 import ParentEdit from "../views/profile/edit/parentEdit";
-// import TeacherEdit from "../views/profile/edit/teacherEdit";
+import TeacherEdit from "../views/profile/edit/teacherEdit";
 import Sign from "../views/registeration/sign";
 import Log from "../views/registeration/log";
 import PasswordReset from "../views/registeration/password/passwordReset";
@@ -49,7 +49,7 @@ const Views = () => {
                     <Route path="faq" element={<Faq />} />
                     <Route path="schoolEdit" element={<SchoolEdit />} />
                     <Route path="parentEdit" element={<ParentEdit />} />
-                    {/* <Route path="teacherEdit" element={<TeacherEdit />} /> */}
+                    <Route path="teacherEdit" element={<TeacherEdit />} />
                     <Route path="join" element={<Sign />} />
                     <Route path="log" element={<Log />} />
                 </Routes>

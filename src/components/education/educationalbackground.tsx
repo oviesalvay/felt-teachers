@@ -29,6 +29,7 @@ const EducationalBackground: FC<experience> = ({ data, title }) => {
                                         {qualifications.degree && <p>{qualifications.degree}</p>}
                                         {qualifications.year && <p >{qualifications.year}</p>}
                                         {qualifications.school && <p>{qualifications.school}</p>}
+                                        {qualifications.text && <p id="degree">{qualifications.text}</p>}
                                     </div>
                                 </>
                             )

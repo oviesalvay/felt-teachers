@@ -4,7 +4,6 @@ import { ConnectButton } from "../../components/button/button";
 import yellow from '../../assets/yellow.png';
 import About from '../../components/about/about';
 import editPen from '../../assets/editPen.png';
-import Experience from '../../components/experiences/experience';
 import EducationalBackground from '../../components/education/educationalbackground';
 import { educationalBackground, workExperience, CV } from '../../components/data/qualification';
 
@@ -42,7 +41,6 @@ const TeacherProfile = () => {
             <p id='school'>I am a secondary school teacher with 5 years of
                 experience in working with teenagers between the ages 10-18</p>
             <About />
-            <Experience />
             <EducationalBackground data={educationalBackground} />
             <EducationalBackground data={workExperience} />
             <EducationalBackground data={CV} />

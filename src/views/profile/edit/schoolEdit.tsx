@@ -1,10 +1,10 @@
 import editPen from '../../../assets/editPen.png';
 import Ellips from '../../../assets/Ellips.png';
-import AboutEdit from '../edit/components/aboutEdit';
 import '../edit/profileEdit.scss';
 import EducationalBackground from '../../../components/education/educationalbackground';
 import { jobAdverts, requirement } from '../../../components/data/qualification';
 import MoreOption from './components/moreoption';
+import EditAbout from '../edit/components/editAbout';
 
 const SchoolEdit = () => {
     return (
@@ -45,7 +45,7 @@ const SchoolEdit = () => {
                         <p>Alpha ready secondary school is a school dedicated to providing quality
                             education with the aid of amazing teachers and staff</p></div>
                 </div>
-                <AboutEdit />
+                <EditAbout />
                 <EducationalBackground data={jobAdverts} />
                 <EducationalBackground data={requirement} />
                 <MoreOption />

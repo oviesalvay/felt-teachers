@@ -31,6 +31,7 @@
     .profile {
         @include flex-align-center;
         @include padding;
+        margin: 2rem 0;
 
         .edited {
             h2 {
@@ -40,14 +41,14 @@
 
         span {
             display: block;
-            background-color: #FDB827;
+            background-color: #F45050;
             height: 10px;
             width: 10px;
             border-radius: 8rem;
         }
 
         h5 {
-            color: #FDB827;
+            color: #F45050;
         }
     }
 

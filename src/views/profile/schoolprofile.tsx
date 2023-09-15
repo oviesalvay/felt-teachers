@@ -3,7 +3,6 @@ import james from '../../assets/james.svg';
 import yellow from '../../assets/yellow.png';
 import editPen from '../../assets/editPen.png';
 import About from "../../components/about/about";
-import Experience from "../../components/experiences/experience";
 import EducationalBackground from "../../components/education/educationalbackground";
 import { jobAdverts, requirement } from "../../components/data/qualification";
 import '../../styles/teacher.scss';
@@ -43,7 +42,6 @@ const SchoolProfile = () => {
                 </div>
                 <p id="school">Alpha ready secondary school is a school dedicated to providing quality education with the aid of amazing teachers and staff</p>
                 <About />
-                <Experience />
                 <EducationalBackground data={jobAdverts} />
                 <EducationalBackground data={requirement} />
             </div>

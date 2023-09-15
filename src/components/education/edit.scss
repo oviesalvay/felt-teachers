@@ -1,8 +1,20 @@
 @import '../../scss/mixins';
 
 .education-edit {
+    @include padding;
+    // margin: 2rem 0;
+    border-top: 1px solid #C4C4C4;
+
     .feild__toggler {
         @include flexbox;
+        // border-bottom: 1px solid #C4C4C4;
+
+        h3 {
+            color: #23120B;
+            font-family: 'Montserrat';
+            font-size: 26px;
+            font-weight: 400;
+        }
 
         img {
 
@@ -17,12 +29,26 @@
     }
 
     .Education {
+        display: flex;
+        gap: 3rem;
+        margin: 1rem 0;
+        // border-left: 1px solid #FDB827;
+        // text-align: center;
 
-        input {
+        >input {
             background-color: #FFFFFF;
-            border: 0.5px solid #5E5DBA;
             border-radius: 25px;
             padding: 1rem;
+            border: 0.5px solid #5E5DBA;
+            outline: none;
+
+        }
+
+        ::placeholder {
+            font-family: 'Montserrat';
+            font-size: 20px;
+            font-weight: 500;
+            color: #C4C4C4;
         }
     }
 }

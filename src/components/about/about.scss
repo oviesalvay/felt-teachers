@@ -26,3 +26,22 @@
         }
     }
 }
+
+@media screen and (max-width:980px) {
+    .About {
+        display: block;
+
+        .about-intro {
+            margin: 1.4rem 1rem;
+            text-align: center;
+            display: block;
+
+            .about {
+                >div {
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

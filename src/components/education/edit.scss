@@ -4,6 +4,7 @@
     @include padding;
     margin: 2rem 0;
     border-top: 1px solid #C4C4C4;
+    border-bottom: 1px solid #C4C4C4;
 
     .feild__toggler {
         @include flexbox;

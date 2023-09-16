@@ -23,7 +23,7 @@ const TeacherProfile = () => {
                 </figure>
             </div>
             <div className='profile'>
-                <h1>CENTURION CONFIDENCE ETAH</h1>
+                <h2>CENTURION CONFIDENCE ETAH</h2>
                 <div className='name'>
                     <div className='approved'>
                         <div>

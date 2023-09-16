@@ -3,11 +3,6 @@
 .education {
     border-top: 1px solid #C4C4C4;
 
-    color: #23120B;
-    font-family: 'Montserrat';
-    font-size: 16px;
-    font-weight: 400;
-
     .toggler {
         display: block;
         width: 100%;
@@ -20,6 +15,14 @@
         align-items: center;
         justify-content: space-between;
         border-bottom: 1px solid #C4C4C4;
+
+        h3 {
+
+            color: #23120B;
+            font-family: 'Montserrat';
+            font-size: 20px;
+            font-weight: 400;
+        }
 
         img {
             rotate: 180deg;
@@ -61,11 +64,15 @@
 
 @media screen and (max-width:780px) {
     .education {
-        .feild__toggler {
-            .background {}
+
+        &__background {
+            display: grid;
+            grid-template-columns: 100px 80px max-content;
 
             p {
-                padding: 0;
+                padding: 1rem .6rem;
+                font-size: .9rem;
+                text-align: start;
             }
         }
     }

@@ -12,26 +12,27 @@
         padding: 1rem 2rem 18rem 2rem;
         flex-basis: 400px;
 
-        label {
-            font-weight: 'monsterrat';
-            font-size: 24px;
-        }
+        form {
+            label {
+                font-weight: 'monsterrat';
+                font-size: 24px;
+            }
 
-        select {
-            color: #5E5DBA;
-            border: 1px solid #5E5DBA;
-            padding: .6rem .9rem;
-            margin: 1rem 0;
-            border-radius: 20px;
-            font-size: 24px;
-            font-family: 'monsterrat';
-            outline: none;
+            select {
+                color: #5E5DBA;
+                border: 1px solid #5E5DBA;
+                padding: .6rem .9rem;
+                margin: 1rem 0;
+                border-radius: 20px;
+                font-size: 24px;
+                font-family: 'monsterrat';
+                outline: none;
+            }
         }
     }
 
     .instruction {
-        // padding: 1rem 5rem;
-        flex-basis: 400px;
+        flex-basis: 300px;
 
         .begin-test {
             background-color: #5E5DBA;
@@ -57,21 +58,38 @@
         .subject {
             padding: 0 3rem;
 
+            form {
+                display: flex;
+                align-items: center;
+                gap: .1rem;
+                margin: 1rem 0;
+
+                label {
+                    font-size: 16px;
+                }
+
+                select {
+                    margin: 1rem .5rem;
+                }
+            }
+
             .signbutton {
                 display: block;
                 margin: 2rem auto;
             }
 
-            form {
-                display: flex;
-                align-items: center;
-                gap: 1rem;
-                margin: 1rem 0;
-            }
         }
 
         .instruction {
-            padding: 1rem;
+            padding: 1rem 2rem;
+
+            li {
+                font-size: 18px;
+            }
+
+            .begin-test {
+                font-size: 20px;
+            }
         }
     }
 }

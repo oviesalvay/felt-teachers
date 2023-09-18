@@ -2,29 +2,32 @@
 
 
 .option-intro {
-    position: relative;
-    // left: 50px;
-    display: flex;
+    padding-bottom: 12rem;
 
-    // align-items: center;
     .more-options {
-        // transform: translate(1rem, 5rem);
-        // position: absolute;
-        // top: 3rem;
+        float: right;
+        @include padding;
+
+        .option-content {
+            display: flex;
+            align-items: center;
+            gap: .7rem;
+            margin: 1rem 0;
+        }
 
         button {
             color: blue;
             font-family: "Open Sans";
             font-size: 18px;
             font-weight: 400;
-
+            outline: none;
         }
 
         .options {
             @include flex-align-center;
 
             .option {
-                padding: 1rem 3rem;
+                padding: .4rem 2rem;
                 background-color: white;
                 box-shadow: 4px 4px 4px 0px #00000040;
                 border: 0.5px solid #5E5DBA;
@@ -32,11 +35,15 @@
                 font-size: 18px;
                 font-weight: 700;
                 border-radius: 25px;
-                // display: block;
-
+                margin: 1rem 0;
 
                 p {
                     color: #EB5757;
+                }
+
+                p,
+                h4 {
+                    margin: .6rem 0;
                 }
             }
         }

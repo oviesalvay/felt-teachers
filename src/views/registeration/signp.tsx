@@ -25,6 +25,8 @@ const Signing = () => {
     });
     return (
         <section className='sign'>
+            <Link to="/log">
+                <p>Back</p></Link>
             <img src={yellow} alt="" id="yellow" />
             <img src={eclipse} alt="" id="circle" />
             <img src={yellow} alt="" id="yellowed" />

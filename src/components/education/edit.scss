@@ -32,8 +32,6 @@
         display: flex;
         gap: 3rem;
         margin: 1rem 0;
-        // border-left: 1px solid #FDB827;
-        // text-align: center;
 
         >input {
             background-color: #FFFFFF;
@@ -57,11 +55,15 @@
     .education-edit {
         .Education {
             display: block;
+        }
 
-            input {
-                margin: .5rem 0;
+        .education-content {
+            display: block;
 
-            }
+        }
+
+        input {
+            margin: .5rem 0;
         }
     }
 }

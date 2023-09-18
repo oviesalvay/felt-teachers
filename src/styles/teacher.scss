@@ -54,7 +54,6 @@
         .name {
             @include flex-align-center;
 
-
             .approved {
                 display: flex;
                 align-items: center;
@@ -130,9 +129,18 @@
 
         .profile {
             display: block;
+            margin: 1rem;
+
+            h2 {
+                font-size: 18px;
+            }
 
             .name {
                 display: block;
+
+                .approved {
+                    margin: 1rem;
+                }
             }
 
             .yellow {

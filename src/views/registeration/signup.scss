@@ -6,6 +6,10 @@
     @include padding;
     position: relative;
 
+    p {
+        color: #5E5DBA;
+    }
+
     #yellow {
         position: absolute;
         bottom: 15rem;

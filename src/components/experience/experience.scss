@@ -30,4 +30,14 @@
     }
 }
 
-@media screen and (max-width:980px) {}
+@media screen and (max-width:980px) {
+    .education-edit {
+        .course {
+            .Education-words {
+                .education-content {
+                    display: block;
+                }
+            }
+        }
+    }
+}

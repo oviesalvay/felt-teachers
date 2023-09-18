@@ -1,6 +1,7 @@
 import { FC, useState } from 'react'
 import '../components/moreoption.scss';
 import Group from '../../../../assets/Group 377.png'
+// import { useNavigate } from 'react-router-dom';
 
 export const MoreOption: FC = () => {
     const [isCodeVisible, setIsCodeVisible] = useState(false);

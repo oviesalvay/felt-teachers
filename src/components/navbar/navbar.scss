@@ -3,7 +3,7 @@
 header {
     z-index: 1000;
     position: relative;
-    padding-bottom: 6rem;
+    padding-bottom: 5rem;
 
     nav {
         position: fixed;
@@ -74,8 +74,9 @@ header {
 
             .navlinks {
                 padding: 2rem;
+                height: 100vh;
                 max-width: 700px;
-                height: 500px;
+                // height: 500px;
                 background: #C4C4C4;
                 position: absolute;
                 flex-direction: column;

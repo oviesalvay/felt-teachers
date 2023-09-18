@@ -46,9 +46,9 @@ const EducationalBackgroundEdit = () => {
                                 <input type="text" placeholder="Course" />
                             </div>
                         }
-                    </form >
+                    </form>
                 </div>
-            </div >
+            </div>
         </>
     )
 }

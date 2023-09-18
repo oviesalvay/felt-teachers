@@ -2,8 +2,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "../views/home";
 import School from "../views/schools";
 import SignUp from '../views/registeration/signt'
-import SignS from '../views/registeration/signS';
-import Signing from '../views/registeration/signp';
 import Login from "../views/registeration/login";
 import Navbar from "../components/navbar/navbar";
 import TestPage from "../views/testPage/testPage";
@@ -20,9 +18,10 @@ import Faq from "../views/FAQ/faq";
 import SchoolEdit from "../views/profile/edit/schoolEdit";
 import ParentEdit from "../views/profile/edit/parentEdit";
 import TeacherEdit from "../views/profile/edit/teacherEdit";
-import Sign from "../views/registeration/sign";
 import Log from "../views/registeration/log";
 import PasswordReset from "../views/registeration/password/passwordReset";
+import Join from "../views/registeration/join";
+
 const Views = () => {
     return (
         <>
@@ -32,9 +31,7 @@ const Views = () => {
                     <Route path="/" element={<HomePage />} />
                     <Route path="school" element={<School />} />
                     <Route path="help" element={<TeacherProfile />} />
-                    <Route path="/signup" element={<SignUp />} />
-                    <Route path="/signS" element={<SignS />} />
-                    <Route path="/signing" element={<Signing />} />
+                    <Route path="/signup/:role" element={<SignUp />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/testPage" element={<TestPage />} />
                     <Route path="/test" element={<Test />} />
@@ -50,7 +47,7 @@ const Views = () => {
                     <Route path="schoolEdit" element={<SchoolEdit />} />
                     <Route path="parentEdit" element={<ParentEdit />} />
                     <Route path="teacherEdit" element={<TeacherEdit />} />
-                    <Route path="join" element={<Sign />} />
+                    <Route path="join" element={<Join />} />
                     <Route path="log" element={<Log />} />
                 </Routes>
             </BrowserRouter>

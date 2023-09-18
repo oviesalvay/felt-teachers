@@ -5,8 +5,31 @@ import { Link } from 'react-router-dom';
 import yellow from '../../assets/yellow.png';
 import circle from '../../assets/circle.png';
 import circled from '../../assets/circled.png';
+import { useNavigate } from 'react-router-dom';
 
-const Sign = () => {
+const Join = () => {
+
+    const navigate = useNavigate()
+
+    const value1 = () => {
+        localStorage.setItem("f/role/-type", JSON.stringify("Teacher"))
+        setTimeout(() => {
+            navigate("/signup/teacher")
+        }, 500)
+    }
+    const value2 = () => {
+        localStorage.setItem("f/role/-type", JSON.stringify("School"))
+        setTimeout(() => {
+            navigate("/signup/school")
+        }, 500)
+    }
+    const value3 = () => {
+        localStorage.setItem("f/role/-type", JSON.stringify("Parent"))
+        setTimeout(() => {
+            navigate("/signup/parent")
+        }, 500)
+    }
+
     return (
         <>
             <section className='join-intro'>
@@ -27,17 +50,19 @@ const Sign = () => {
                             Today</h4>
                         <p>Which Category Do You Belong</p>
                         {/* <div> */}
-                        <Link to="/signUp">
-                            <LinkButton type="none" content="Teacher" /></Link>
-                        <Link to="/signS">
-                            <LinkButton type="none" content="School" /></Link>
-                        <Link to="/signing">
-                            <LinkButton type="none" content="Parent" /></Link>
-                        {/* </div> */}
+                        <a onClick={value1}>
+                            <LinkButton type="none" content="Teacher" />
+                        </a>
+                        <a onClick={value2}>
+                            <LinkButton type="none" content="School" />
+                        </a>
+                        <a onClick={value3}>
+                            <LinkButton type="none" content="Parent" />
+                        </a>
                     </div>
                 </div>
             </section>
         </>
     )
 }
-export default Sign;
+export default Join;

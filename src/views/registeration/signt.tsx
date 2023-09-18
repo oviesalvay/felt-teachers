@@ -5,9 +5,6 @@ import yellow from "../../views/registeration/assest/yellow.png";
 import { Link } from 'react-router-dom';
 import eclipse from "./assest/eclipse.png";
 
-
-
-
 const Signup = () => {
     const onSubmit = (values: any) => {
         console.log("Submitted", values);
@@ -25,6 +22,9 @@ const Signup = () => {
         validationSchema: signupSchema,
         onSubmit
     });
+
+    const role = JSON.parse(localStorage.getItem("f/role/-type") as string)
+
     return (
         <section className='sign'>
             <Link to='/log'>
@@ -33,14 +33,24 @@ const Signup = () => {
             <img src={eclipse} alt="" id="circle" />
             <img src={yellow} alt="" id="yellowed" />
             <section className='signup'>
-                <h1>Sign Up as a Teacher</h1>
+                <h1>Sign Up as a {role}</h1>
                 <form onSubmit={handleSubmit}>
-                    <label htmlFor='first name' id="FirstName"></label><br></br>
-                    <input className={errors.FirstName && touched.FirstName ? "input-error" : ""} type="name" id="FirstName" onChange={handleChange} onBlur={handleBlur} value={values.FirstName} placeholder="First Name" />
-                    {errors.FirstName && touched.FirstName && <p className='error'>{errors.FirstName}</p>}<br></br>
-                    <label htmlFor='last name' id="lastName"></label><br></br>
-                    <input className={errors.lastName && touched.lastName ? "input-error" : ""} type="name" id="lastName" onChange={handleChange} onBlur={handleBlur} value={values.lastName} placeholder="Last Name" />
-                    {errors.lastName && touched.lastName && <p className='error'>{errors.lastName}</p>}<br></br>
+                    {role === "School" ?
+                        <>
+                            <label htmlFor='first name' id="FirstName"></label><br></br>
+                            <input className={errors.FirstName && touched.FirstName ? "input-error" : ""} type="name" id="FirstName" onChange={handleChange} onBlur={handleBlur} value={values.FirstName} placeholder="School Name" />
+                            {errors.FirstName && touched.FirstName && <p className='error'>{errors.FirstName}</p>}<br></br>
+                        </>
+                        :
+                        <>
+                            <label htmlFor='first name' id="FirstName"></label><br></br>
+                            <input className={errors.FirstName && touched.FirstName ? "input-error" : ""} type="name" id="FirstName" onChange={handleChange} onBlur={handleBlur} value={values.FirstName} placeholder="First Name" />
+                            {errors.FirstName && touched.FirstName && <p className='error'>{errors.FirstName}</p>}<br></br>
+                            <label htmlFor='last name' id="lastName"></label><br></br>
+                            <input className={errors.lastName && touched.lastName ? "input-error" : ""} type="name" id="lastName" onChange={handleChange} onBlur={handleBlur} value={values.lastName} placeholder="Last Name" />
+                            {errors.lastName && touched.lastName && <p className='error'>{errors.lastName}</p>}<br></br>
+                        </>
+                    }
                     <div className='flex'>
                         <div>
                             <label htmlFor='email' id="email"></label><br></br>

@@ -17,9 +17,7 @@ export const Navbar: FC = () => {
         <header>
             <nav>
                 <div className="logo">
-                    <div>
-                        <img src={Subtract} alt="" />
-                    </div>
+                    <img src={Subtract} height="40px" alt="" />
                     <div>
                         <h1>Felt Teachers</h1>
                     </div>
@@ -31,7 +29,7 @@ export const Navbar: FC = () => {
                         <button className='signup'>SIGN UP</button></Link>
                 </div>
                 <div onClick={handleClick} className='hamburger'>
-                    {shownav ? <FaTimes size={30} /> : <FaBars size={25} />}
+                    {shownav ? <FaTimes size={30} color="#5E5DBA" /> : <FaBars size={25} color="#5E5DBA" />}
                 </div>
             </nav>
         </header >

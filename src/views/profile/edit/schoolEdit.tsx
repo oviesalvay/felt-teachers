@@ -50,8 +50,8 @@ const SchoolEdit = () => {
                             education with the aid of amazing teachers and staff</p></div>
                 </div>
                 <EditAbout />
-                <EducationalBackground title="OPEN  JOB ADVERTS (1)" data={jobAdverts} />
-                <EducationalBackground title="REQUIREMENTS" data={requirement} />
+                <EducationalBackground title="OPEN  JOB ADVERTS (1)" data={jobAdverts} gtc="200px 200px max-content" />
+                <EducationalBackground title="REQUIREMENTS" data={requirement} gtc="1fr" />
                 <MoreOption />
             </section>
         </>

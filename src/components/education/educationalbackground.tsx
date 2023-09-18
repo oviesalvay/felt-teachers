@@ -5,9 +5,10 @@ import "./index.scss";
 interface experience {
     data: Array<object>
     title?: string
+    gtc: string
 }
 
-const EducationalBackground: FC<experience> = ({ data, title }) => {
+const EducationalBackground: FC<experience> = ({ data, title, gtc }) => {
 
 
     const [showQualification, setShowQualification] = useState<boolean>(false)
@@ -25,7 +26,7 @@ const EducationalBackground: FC<experience> = ({ data, title }) => {
                         {data.map((qualifications: any, index: number) => {
                             return (
                                 <>
-                                    <div key={index} className='education__background'>
+                                    <div key={index} className='education__background' style={{ gridTemplateColumns: `${gtc}` }}>
                                         {qualifications.degree && <p>{qualifications.degree}</p>}
                                         {qualifications.year && <p >{qualifications.year}</p>}
                                         {qualifications.school && <p>{qualifications.school}</p>}

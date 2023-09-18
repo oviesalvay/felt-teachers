@@ -41,13 +41,11 @@
 
     &__background {
         display: grid;
-        grid-template-columns: 200px 200px max-content;
 
         p {
             padding: .7rem 1rem;
             text-align: center;
             // margin: 0;
-
 
             &:nth-child(2) {
                 border-left: 1px solid #FDB827;
@@ -56,15 +54,13 @@
         }
 
         #degree {
-            margin: 1rem 15rem;
-            max-width: 500px;
+            text-align: unset;
         }
     }
 }
 
 @media screen and (max-width:780px) {
     .education {
-
         &__background {
             display: grid;
             grid-template-columns: 100px 100px max-content;

@@ -49,10 +49,10 @@ export const Login: FC = () => {
                                 <h4>Forgot Password?</h4>
                             </div>
                             <div>
-                                <button className="loging">Login</button>
+                                <button type="submit" className="loging">Login</button>
                             </div>
                         </div>
-                        <h5>Don’t have an account? <Link to="/signup"><a>Sign up</a></Link></h5>
+                        <h5>Don’t have an account? <Link to="/signup">Sign up</Link></h5>
                     </form>
                 }
                 {tab === 2 &&
@@ -68,10 +68,10 @@ export const Login: FC = () => {
                                 <h4>Forgot Password?</h4>
                             </div>
                             <div>
-                                <button className="loging">Login</button>
+                                <button type="submit" className="loging">Login</button>
                             </div>
                         </div>
-                        <h5>Don’t have an account? <Link to="/sign"><a>Sign up</a></Link></h5>
+                        <h5>Don’t have an account? <Link to="/sign">Sign up</Link></h5>
                     </form>
                 }
                 {tab === 3 &&
@@ -87,10 +87,10 @@ export const Login: FC = () => {
                                 <h4>Forgot Password?</h4>
                             </div>
                             <div>
-                                <button className="loging">Login</button>
+                                <button type="submit" className="loging">Login</button>
                             </div>
                         </div>
-                        <h5>Don’t have an account? <Link to="/signing"><a>Sign up</a></Link></h5>
+                        <h5>Don’t have an account? <Link to="/signing">Sign up</Link></h5>
                     </form>
                 }
             </div>
